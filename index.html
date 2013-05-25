@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <title>ZENIQLO</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    </head>
+    <body>
+        <div id="screen">
+            <span id="framecounter">(0/0 fps)</span>
+            <script type="text/javascript" src="lib/melonJS-0.9.5.js"></script>
+            <script type="text/javascript" src="lib/cp.js"></script>
+            <script type="text/javascript" src="lib/cm.js"></script>
+
+            <script type="text/javascript" src="js/config.js"></script>
+            <script type="text/javascript" src="js/game.js"></script>
+            <script type="text/javascript" src="js/stat.js"></script>
+            <script type="text/javascript" src="js/notify.js"></script>
+
+            <script type="text/javascript" src="js/objects/sprite.js"></script>
+
+            <script type="text/javascript" src="js/objects/dialog.js"></script>
+            <script type="text/javascript" src="js/objects/eyes.js"></script>
+            <script type="text/javascript" src="js/objects/exit.js"></script>
+            <script type="text/javascript" src="js/objects/gui.js"></script>
+            <script type="text/javascript" src="js/objects/npc.js"></script>
+
+            <script type="text/javascript" src="js/screens/animated.js"></script>
+            <script type="text/javascript" src="js/screens/play.js"></script>
+            <script type="text/javascript" src="js/screens/info.js"></script>
+            <script type="text/javascript" src="js/screens/credits.js"></script>
+
+            <script type="text/javascript" src="js/objects/shadow.js"></script>
+            <script type="text/javascript" src="js/objects/static.js"></script>
+
+            <script type="text/javascript" src="js/entities/chest.js"></script>
+            <script type="text/javascript" src="js/entities/item.js"></script>
+            <script type="text/javascript" src="js/entities/bots.js"></script>
+            <script type="text/javascript" src="js/entities/player.js"></script>
+            <script type="text/javascript" src="js/entities/weapon.js"></script>
+
+            <script type="text/javascript" src="js/resources.js"></script>
+
+            <script type="text/javascript">
+                /* Bootstrap */
+                window.onReady(function onReady() {
+                    game.onload();
+                });
+            </script>
+        </div>
+    </body>
+</html>
