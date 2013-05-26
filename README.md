@@ -2,7 +2,7 @@
 
 ## About
 
-A short game about UNIQLO.
+A short game about ZENIQLO.
 Made as an educational exercise in marketing class presentation.
 
 ## License
