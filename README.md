@@ -29,4 +29,4 @@ For more details license information, please see resources.js
 - [Google Chrome 27](http://www.google.com/chrome/)
 - [IntelliJ IDEA 12](http://www.jetbrains.com/idea/)
 - [Sublime Text 2](http://www.sublimetext.com/)
-- [Tiled-QT](http://www.mapeditor.org/)
+- [Tiled 0.9](http://www.mapeditor.org/)
