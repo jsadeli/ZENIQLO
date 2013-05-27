@@ -42,7 +42,7 @@
   <object name="exit" x="421" y="360" width="22" height="20">
    <properties>
     <property name="fade" value="black"/>
-    <property name="location" value="625,250"/>
+    <property name="location" value="1040,432"/>
     <property name="to" value="world"/>
    </properties>
   </object>

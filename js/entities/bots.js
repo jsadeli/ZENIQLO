@@ -42,7 +42,7 @@ game.NPCEntities = {
             else {
                 game.dialog([
                     "SHAKESPEARE BOOK! THANK YOU!",
-                    "SO CUTEEEE~~~!!!!@$@#"
+                    "KAWAIIIII~~~!!!!@$@#"
                 ]);
             }
         }
