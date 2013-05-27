@@ -60,13 +60,15 @@ game.installHUD = function HUD() {
         },
 
         "cacheIcon" : function cacheIcon(item) {
-            item.cached_icon = game.getImage(item.image);
+            if (item.image) {
+                item.cached_icon = game.getImage(item.image);
 
-            var count = ~~(item.cached_icon.width / item.spritewidth);
-            item.offset = {
-                "x" : (item.icon % count) * item.spritewidth,
-                "y" : ~~(item.icon / count) * item.spriteheight
-            };
+                var count = ~~(item.cached_icon.width / item.spritewidth);
+                item.offset = {
+                    "x" : (item.icon % count) * item.spritewidth,
+                    "y" : ~~(item.icon / count) * item.spriteheight
+                };
+            }
         },
 
         "addItem" : function addItem(item) {
