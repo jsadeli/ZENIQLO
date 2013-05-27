@@ -29,6 +29,8 @@ game.resources = {
         "abi_eyes",
         "george",
         "george_eyes",
+        "james",
+        "james_eyes",
         "jessica",
         "jessica_eyes",
         "whitey",

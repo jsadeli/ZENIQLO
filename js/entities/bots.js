@@ -45,5 +45,26 @@ game.NPCEntities = {
                 ]);
             }
         }
+    }),
+
+    "James" : game.NPC.extend({
+        "init": function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            // adjust collision bounding box
+            this.adjustBoxShape(0, -10, 25, 20);
+
+            this.body.setMass(Infinity);    // value is from positive number to Infinity
+        },
+
+        "interact": function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "How are you? My name is James, nice to meet you."
+            ]);
+        }
     })
 };

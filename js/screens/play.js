@@ -116,8 +116,8 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "winterfell",
-                "music"     : "nyan_cat_original",
+                "to"        : "world",
+//                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
