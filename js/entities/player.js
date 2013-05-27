@@ -84,6 +84,9 @@ game.PlayerEntity = game.NPC.extend({
 
     "interactionCallback" : function interactionCallback(message) {
         switch (message.type) {
+            case "null":
+                // ignore, null or empty item
+                break;
             case "item":
                 game.HUD.HUDItems.inventory.addItem(message.data);
                 break;

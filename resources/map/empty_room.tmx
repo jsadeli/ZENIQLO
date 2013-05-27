@@ -50,6 +50,15 @@
     <property name="spritewidth" value="31"/>
    </properties>
   </object>
+  <object name="chest" x="36" y="66" width="32" height="32">
+   <properties>
+    <property name="contents" value="{&quot;type&quot;:&quot;null&quot;}"/>
+    <property name="image" value="chests"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spritewidth" value="32"/>
+    <property name="which" value="1"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="collision" width="12" height="9">
   <object x="164" y="254">

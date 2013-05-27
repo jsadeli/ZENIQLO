@@ -93,6 +93,8 @@ game.resources = {
 
     /* Maps from Tiled. */
     "map" : [
+        "players_room",
+        "players_house",
         "world",
         "empty_room",
         "library",

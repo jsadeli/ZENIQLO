@@ -123,8 +123,8 @@ game.PlayScreen = game.AnimatedScreen.extend({
             });
         } else {
             this.loadLevel({
-                "to"        : "world",
-                "music"     : "pink_and_lively",
+                "to"        : "players_room",
+//                "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
