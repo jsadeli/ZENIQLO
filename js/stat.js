@@ -17,12 +17,25 @@ game.stat = (function stat() {
     var current = null;
 
     function save(key, value) {
-        // TODO: enable save feature
+        try {
+            if (!current) {
+                current = {};
+            }
+            current[key] = value;
+        }
+        catch (e) {
+            current = null;
+            throw "Error saving stat '" + key + "' to localStorage.";
+        }
     }
 
     function load(key) {
-        // TODO: enable load feature
-        return null;
+        if (!current) {
+            current = null;
+            return null;
+        }
+
+        return current[key];
     }
 
     function keys() {
