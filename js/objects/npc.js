@@ -34,8 +34,25 @@ game.NPC = game.Sprite.extend({
     // Standing or walking?
     "standing" : true,
 
+    // Whether or not the character can roam freely.
+    // Body mass will affect the character's ability to roam.
+    // Note: specifying a mass of Infinity will disable NPC roaming.
+    "allowRoaming" : true,
+
+    // Sleep time when standing.
+    "sleep" : 0,
+
+    // Maximum distance to walk while roaming.
+    "maxDistance" : 200,
+
     // How much force to apply when walking.
     "forceConstant" : 600,
+
+    // How far away from destination is "good enough".
+    // A low tolerance will cause the NPC to "bounce" around its destination.
+    // A high tolerance will cause the NPC to stop short of its destination.
+    // This tolerance will cause just enough "bounciness" to look "realistic".
+    "destTolerance" : 8,
 
     // Walking speed. (forceConstant is multiplied by velocity for the final force applied.)
     "velocity" : 2,
@@ -111,6 +128,18 @@ game.NPC = game.Sprite.extend({
         }
     },
 
+    "resetRoam" : function resetRoam() {
+        if (this.sleep <= 0) {
+            // Sleep for a random period between 0 - 5 seconds.
+            this.sleep = Math.random() * 5 * me.sys.fps;
+            this.destination.x = this.destination.y = 0;
+
+            this.tracking = null;
+
+            this.stand();
+        }
+    },
+
     "stand" : function stand() {
         // Force standing animation.
         this.isDirty = true;
@@ -130,7 +159,82 @@ game.NPC = game.Sprite.extend({
     },
 
     "checkMovement" : function checkMovement() {
-        // do nothing, stand still!
+        var self = this;
+
+        if (self.body.getMass() == Infinity) {
+            return;
+        }
+        if (!self.allowRoaming) {
+            return;
+        }
+        if (--self.sleep > 0) {
+            return;
+        }
+
+        self.standing = false;
+
+        var x = self.body.p.x;
+        var y = c.HEIGHT - self.body.p.y;
+
+        // Choose a nearby random point
+        if (!self.destination.x || !self.destination.y) {
+            // FIXME: Use a bounding box to set the NPC roaming zone, and
+            // cp.bbContainsBB() to validate position!
+
+            var max = self.maxDistance * 2;
+            var hMax = self.maxDistance;
+
+            self.destination.x = x + ~~(Math.random() * max - hMax);
+            self.destination.y = y + ~~(Math.random() * max - hMax);
+        }
+
+        // Decide direction to destination.
+        var force = {
+            "x" : self.destination.x - x,
+            "y" : self.destination.y - y
+        };
+
+        // Decide distance based on destTolerance.
+        force.x = (Math.abs(force.x) < self.destTolerance) ? 0 : force.x.clamp(-1, 1);
+        force.y = (Math.abs(force.y) < self.destTolerance) ? 0 : force.y.clamp(-1, 1);
+
+        // Set direction, favoring X-axis.
+        if (force.y) {
+            self.dir_name = (force.y < 0 ? "up" : "down");
+        }
+        if (force.x) {
+            self.dir_name = (force.x < 0 ? "left" : "right");
+        }
+
+        // Set animation.
+        self.setCurrentAnimation("walk_" + self.dir_name);
+
+
+        // Calculate directional velocity.
+        force.x *= self.velocity * me.timer.tick;
+        force.y *= self.velocity * me.timer.tick;
+        if (force.x && force.y) {
+            force.x *= self.walk_angle;
+            force.y *= self.walk_angle;
+        }
+        // Run when tracking prey.
+        if (self.tracking) {
+            force.x *= 1.5;
+            force.y *= 1.5;
+        }
+
+        if ((self.sleep < -10) && !~~self.body.vx && !~~self.body.vy) {
+            self.resetRoam();
+        }
+        else {
+            // Walk toward the destination.
+            self.isDirty = true;
+            self.body.applyForce(cp.v(force.x * self.forceConstant, force.y * -self.forceConstant), cp.vzero);
+        }
+
+        if (~~self.body.vy !== 0) {
+            game.wantsResort = true;
+        }
     },
 
     "interact" : function interact(actor) {
