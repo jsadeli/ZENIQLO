@@ -21,6 +21,7 @@ game.NPCEntities = {
 
         "init" : function init(x, y, settings) {
             this.value = 1000;
+            this.allowRoaming = false;
             this.parent(x, y, settings);
 
             // Adjust collision bounding box.
@@ -51,10 +52,7 @@ game.NPCEntities = {
         "init": function init(x, y, settings) {
             this.parent(x, y, settings);
 
-            // adjust collision bounding box
-            this.adjustBoxShape(0, -10, 25, 20);
-
-            this.body.setMass(Infinity);    // value is from positive number to Infinity
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
 
         "interact": function interact(actor, callback) {
@@ -65,6 +63,25 @@ game.NPCEntities = {
             game.dialog([
                 "How are you? My name is James, nice to meet you."
             ]);
+        }
+    }),
+
+    "Whitey" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+            this.body.setMass(Infinity);
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "I'm Whitey, what's your name?"
+            ])
         }
     })
 };
