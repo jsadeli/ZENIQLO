@@ -148,11 +148,11 @@ var game = {
         me.entityPool.add("exit", game.Exit);
         me.entityPool.add("static", game.Static);
 
+        // start
         if (c.DEBUG) {
             me.state.change(me.state.PLAY);
         }
-        // Display warning if audio is not available.
-        else if (!me.audio.isAudioEnable()) {
+        else if (!me.audio.isAudioEnable()) {       // display warning if audio is not available.
             me.state.set(c.STATE_INFO, new game.InfoScreen(game.info.audio_error));
             me.state.change(c.STATE_INFO);
         }

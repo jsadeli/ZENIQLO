@@ -85,21 +85,14 @@ game.PlayerEntity = game.NPC.extend({
     "interactionCallback" : function interactionCallback(message) {
         switch (message.type) {
             case "item":
-//                game.HUD.HUDItems.inventory.addItem(message.data);
+                game.HUD.HUDItems.inventory.addItem(message.data);
                 break;
-
-            case "weapon":
-//                game.HUD.HUDItems.inventory.addWeapon(message.data);
-                break;
-
             case "coins":
                 game.HUD.updateItemValue("coins", message.data);
                 break;
-
             case "warp":
                 game.play.loadLevel(message.data);
                 break;
-
             default:
                 console.error(
                     "Unknown message type in interactionCallback: " +

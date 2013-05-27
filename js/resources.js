@@ -34,8 +34,6 @@ game.resources = {
         "whitey",
         "whitey_eyes",
         "char_shadow",
-
-        // Baddies
         "snake",
 
         // Collectibles
@@ -47,55 +45,50 @@ game.resources = {
         // Interactive objects
         "chests",
 
-        // Tile maps
-        /* island */
-        "animwater",
-        "grass",
-        "sandwater",
-        "treetop",
-        "trunk",
-
-        /* rachels_room */
+        // Tilesets
         "accessories",
-        "cabinets",
-        "country",
-        "floor",
-        "house",
-        "inside",
-        "stairs",
-        "victoria",
-
-        /* rachels_house */
-        "kitchen",
-
-        /* earth */
+        "animwater",
         "barrel",
         "bridges",
         "buckets",
+        "cabinets",
+        "castlefloors_outside",
+        "country",
+        "dark_library_stuff",
         "dirt",
         "dirt2",
         "doors",
+        "dungeon",
         "farming_fishing",
         "fence",
         "fence_alt",
+        "floor",
         "flowers_2",
+        "grass",
         "grassalt_flowers",
+        "house",
         "housey",
+        "inside",
+        "kitchen",
         "misc",
         "mountains",
+        "sandwater",
         "shadow",
         "signs",
+        "snow",
+        "snowcoldwater",
+        "snowice",
+        "snowwater",
+        "snowwateralt",
+        "stairs",
         "stonepattern",
         "town_buildings",
         "tree_stump",
+        "treetop",
+        "trunk",
+        "victoria",
         "victorian_house",
         "windmill",
-
-        /* library */
-        "dark_library_stuff",
-
-        /* dungeon */
-        "dungeon",
     ],
 
     /* Maps from Tiled. */
@@ -103,7 +96,9 @@ game.resources = {
         "world",
         "empty_room",
         "library",
-        "dungeon"
+        "winterfell",
+        "dungeon",
+        "castle"
     ],
 
     /* 1-channel audio. Usually sound effects. */

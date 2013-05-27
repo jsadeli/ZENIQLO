@@ -88,16 +88,6 @@ game.PlayScreen = game.AnimatedScreen.extend({
                         game.stat.save("tutorial4", true);
                     }
                     break;
-                case "empty_room":
-                    me.event.publish("notify", [ "nyan cat!" ]);
-
-                    // nyahahaha :D
-                    me.audio.stopTrack("nyan_cat_original");
-                    me.audio.playTrack("nyan_cat_original");
-                    break;
-//                default:
-//                    me.audio.stopTrack();
-//                    break;
             }
 
             // Load the first level.
@@ -124,12 +114,21 @@ game.PlayScreen = game.AnimatedScreen.extend({
         }
 
         // Load the level.
-        this.loadLevel({
-            "to"        : "world",
-            "music"     : "pink_and_lively",
-            "fadeOut"   : "black",
-            "duration"  : 1000
-        });
+        if (c.DEBUG) {
+            this.loadLevel({
+                "to"        : "winterfell",
+                "music"     : "nyan_cat_original",
+                "fadeOut"   : "black",
+                "duration"  : 1000
+            });
+        } else {
+            this.loadLevel({
+                "to"        : "world",
+                "music"     : "pink_and_lively",
+                "fadeOut"   : "black",
+                "duration"  : 1000
+            });
+        }
     },
 
     "onDestroyEvent" : function onDestroyEvent() {

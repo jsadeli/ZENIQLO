@@ -40,7 +40,7 @@ game.NPCEntities = {
             }
             else {
                 game.dialog([
-                    "NYAN CAT SONG!",
+                    "SHAKESPEARE BOOK! THANK YOU!",
                     "SO CUTEEEE~~~!!!!@$@#"
                 ]);
             }

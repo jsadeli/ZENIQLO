@@ -52,6 +52,11 @@ game.installHUD = function HUD() {
             contents.forEach(function forEach(item) {
                 self.addItem(item);
             })
+
+            this.contents = (game.stat.load("inventory_contents") || []).map(function map(item) {
+                self.cacheIcon(item);
+                return item;
+            });
         },
 
         "cacheIcon" : function cacheIcon(item) {
@@ -62,6 +67,30 @@ game.installHUD = function HUD() {
                 "x" : (item.icon % count) * item.spritewidth,
                 "y" : ~~(item.icon / count) * item.spriteheight
             };
+        },
+
+        "addItem" : function addItem(item) {
+            me.audio.play("fanfare");
+            me.event.publish("acquire item", [ item.name ]);
+            game.dialog([ item.description ]);
+
+            this.cacheIcon(item);
+            this.updated = true;
+            this.contents.push(item);
+
+            game.stat.save("inventory_contents", this.contents.map(function map(item) {
+                var result = {};
+                Object.keys(item).forEach(function forEach(key) {
+                    if (key !== "cached_icon") {
+                        result[key] = item[key];
+                    }
+                });
+                return result;
+            }));
+        },
+
+        "removeItem" : function removeItem(idx) {
+            this.contents.splice(idx, 1);
         },
 
         "getItem" : function getItem(idx) {

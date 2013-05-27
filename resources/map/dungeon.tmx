@@ -34,7 +34,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
-    <property name="to" value="library"/>
+    <property name="to" value="castle"/>
    </properties>
   </object>
  </objectgroup>
