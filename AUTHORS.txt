@@ -162,5 +162,8 @@ Daniel Armstrong
 Jeffrey Sadeli
  - player.png
 
+Tiffany Sadeli
+ - armor_male_green.png
+
 Community Audio (http://archive.org/details/opensource_audio)
  - nyan_cat_original.ogg

@@ -154,6 +154,14 @@
     <property name="to" value="players_house"/>
    </properties>
   </object>
+  <object name="guard" x="377" y="647" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
+    <property name="image" value="armor_male_green"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="library overlay" width="40" height="25">
   <data encoding="base64">

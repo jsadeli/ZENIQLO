@@ -81,7 +81,25 @@ game.NPCEntities = {
 
             game.dialog([
                 "I'm Whitey, what's your name?"
-            ])
+            ]);
+        }
+    }),
+
+    "Guard" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+            this.allowRoaming = false;
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Shooo... go away! Leave me alone!"
+            ]);
         }
     })
 };

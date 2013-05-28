@@ -123,7 +123,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
             });
         } else {
             this.loadLevel({
-                "to"        : "dungeon",
+                "to"        : "world",
                 "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000
