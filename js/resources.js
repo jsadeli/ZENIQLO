@@ -56,6 +56,9 @@ game.resources = {
         "cabinets",
         "castlefloors_outside",
         "country",
+        "castlewalls",
+        "castle_outside",
+        "castlefloors",
         "dark_library_stuff",
         "dirt",
         "dirt2",
@@ -84,13 +87,22 @@ game.resources = {
         "snowwateralt",
         "stairs",
         "stonepattern",
+        "tile_a1",
+        "tile_a2",
+        "tile_a3",
+        "tile_a4",
+        "tile_a5",
+        "tile_b",
+        "tile_c",
+        "tile_d",
+        "tile_e",
         "town_buildings",
         "tree_stump",
         "treetop",
         "trunk",
         "victoria",
         "victorian_house",
-        "windmill",
+        "windmill"
     ],
 
     /* Maps from Tiled. */
@@ -102,7 +114,8 @@ game.resources = {
         "library",
         "winterfell",
         "dungeon",
-        "castle"
+        "castle",
+        "castle_interior"
     ],
 
     /* 1-channel audio. Usually sound effects. */
