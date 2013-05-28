@@ -37,7 +37,7 @@
  <tileset firstgid="386" name="tree_stump" tilewidth="32" tileheight="32">
   <image source="../img/tree_stump.png" width="32" height="32"/>
  </tileset>
- <layer name="grass" width="40" height="25">
+ <layer name="grass" width="40" height="25" opacity="0.97">
   <properties>
    <property name="preRender" value="true"/>
   </properties>
@@ -158,6 +158,14 @@
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
     <property name="image" value="armor_male_green"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="grandpa" x="212" y="659" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;grandpa&quot;}]"/>
+    <property name="image" value="old_man"/>
     <property name="spriteheight" value="34"/>
     <property name="spritewidth" value="29"/>
    </properties>

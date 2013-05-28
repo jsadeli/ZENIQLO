@@ -38,6 +38,7 @@ game.resources = {
         "char_shadow",
         "snake",
         "armor_male_green",
+        "old_man",
 
         // Collectibles
         "coin_gold",

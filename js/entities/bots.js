@@ -90,7 +90,7 @@ game.NPCEntities = {
             this.parent(x, y, settings);
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
-            this.allowRoaming = false;
+//            this.allowRoaming = false;
         },
 
         "interact" : function interact(actor, callback) {
@@ -99,6 +99,24 @@ game.NPCEntities = {
             self.parent(actor);
             game.dialog([
                 "Shooo... go away! Leave me alone!"
+            ]);
+        }
+    }),
+
+    "Grandpa" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+//            this.allowRoaming = false;
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Back in my days ..."
             ]);
         }
     })
