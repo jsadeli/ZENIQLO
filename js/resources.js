@@ -46,6 +46,7 @@ game.resources = {
 
         // Interactive objects
         "chests",
+        "silver_keys",
 
         // Tilesets
         "accessories",

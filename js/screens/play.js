@@ -116,15 +116,15 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "world",
+                "to"        : "castle_interior",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
         } else {
             this.loadLevel({
-                "to"        : "players_room",
-//                "music"     : "pink_and_lively",
+                "to"        : "dungeon",
+                "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
