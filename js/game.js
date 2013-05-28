@@ -155,7 +155,9 @@ var game = {
             me.state.change(me.state.PLAY);
         }
         else if (!me.audio.isAudioEnable()) {       // display warning if audio is not available.
-            me.state.set(c.STATE_INFO, new game.InfoScreen(game.info.audio_error));
+            me.state.set(
+                c.STATE_INFO,
+                new game.InfoScreen(game.info.audio_error, c.STATE_INTRO, "black", 750));
             me.state.change(c.STATE_INFO);
         }
         else {
