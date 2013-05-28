@@ -67,6 +67,15 @@
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
+  <object name="item" x="782" y="507" width="35" height="35">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;dungeon_level_designer&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;The Dungeon. Designed by Enkh-Uchral Uzmee.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="air" width="30" height="30">
   <data encoding="base64">
