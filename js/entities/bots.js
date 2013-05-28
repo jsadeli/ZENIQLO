@@ -21,7 +21,6 @@ game.NPCEntities = {
 
         "init" : function init(x, y, settings) {
             this.value = 1000;
-            this.allowRoaming = false;
             this.parent(x, y, settings);
 
             // Adjust collision bounding box.
@@ -90,7 +89,6 @@ game.NPCEntities = {
             this.parent(x, y, settings);
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
-//            this.allowRoaming = false;
         },
 
         "interact" : function interact(actor, callback) {
@@ -108,7 +106,6 @@ game.NPCEntities = {
             this.parent(x, y, settings);
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
-//            this.allowRoaming = false;
         },
 
         "interact" : function interact(actor, callback) {

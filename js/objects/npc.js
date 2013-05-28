@@ -108,6 +108,10 @@ game.NPC = game.Sprite.extend({
 
         var shape = self.body.shapeList[0];
         self.vision = cp.bb(shape.bb_l, shape.bb_b, shape.bb_r, shape.bb_t);
+
+        if (settings.npc_standing) {
+            this.allowRoaming = !settings.npc_standing;
+        }
     },
 
     "hit" : function hit(power) {

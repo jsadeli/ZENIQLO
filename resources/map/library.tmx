@@ -46,6 +46,15 @@
     <property name="to" value="world"/>
    </properties>
   </object>
+  <object name="grandpa" x="73" y="301" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;grandpa&quot;}]"/>
+    <property name="image" value="old_man"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="collision" width="17" height="12">
   <object x="417" y="384">
