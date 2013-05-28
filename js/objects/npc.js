@@ -88,6 +88,9 @@ game.NPC = game.Sprite.extend({
         // special case in a collision handler, such that Player<->Sprite
         // collisions do not cause them to push one another.
         //self.body.setMass(3);
+        if (settings.mass) {
+            self.body.setMass(settings.mass);
+        }
 
         // Set animations.
         self.addAnimation("walk_down",   [ 0, 4,  8, 12 ]);

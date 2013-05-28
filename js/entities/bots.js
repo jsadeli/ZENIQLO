@@ -70,7 +70,6 @@ game.NPCEntities = {
             this.parent(x, y, settings);
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
-            this.body.setMass(Infinity);
         },
 
         "interact" : function interact(actor, callback) {

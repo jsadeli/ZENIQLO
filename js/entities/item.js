@@ -32,6 +32,7 @@ game.ItemEntity = game.Sprite.extend({
         this.item.image = settings.image;
         this.item.spritewidth = settings.spritewidth;
         this.item.spriteheight = settings.spriteheight;
+        this.item.mass = settings.mass;
         this.item.npc_standing = settings.npc_standing;
 
         // Set shape layers.
