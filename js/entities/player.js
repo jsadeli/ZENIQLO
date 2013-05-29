@@ -32,7 +32,7 @@ game.PlayerEntity = game.NPC.extend({
         // Call the constructor.
         this.parent(x, y, settings);
 
-        // Rachel's mass is always 1.
+        // Player's mass is always 1.
         this.body.setMass(1);
 
         // Register Chipmunk collision handlers.
