@@ -67,6 +67,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
+    <property name="location" value="1536, 128"/>
     <property name="to" value="castle_hallway"/>
    </properties>
   </object>
