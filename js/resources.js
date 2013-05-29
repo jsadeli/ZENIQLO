@@ -132,6 +132,7 @@ game.resources = {
         "farmland",
         "winterfell",
         "dungeon",
+        "castle_exterior",
         "castle_hallway",
         "castle_interior",
         "castle_bedroom",
