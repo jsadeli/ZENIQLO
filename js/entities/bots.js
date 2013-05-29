@@ -110,8 +110,8 @@ game.NPCEntities = {
                 ]);
             } else if (hasCollectedAllBugs) {
                 game.dialog([
-                    "Thanks mate, you helped a lot.",
-                    "You should head to Laura's field, I think she needs your help..."
+                    "Thanks mate, you helped a lot. Now my plants can grow in peace.",
+                    "You should head to Laura's field, I think she needs your help ..."
                 ]);
             }
         }

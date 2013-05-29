@@ -80,7 +80,7 @@
   <object name="item" x="326" y="268" width="32" height="32">
    <properties>
     <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Strength Bug&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Strength Bug: experience and consistency.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
@@ -89,7 +89,7 @@
   <object name="item" x="609" y="119" width="32" height="32">
    <properties>
     <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Opportunities Bug&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Opportunities Bug: expand activities, increase reputation, and leverage other brands.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
@@ -98,7 +98,7 @@
   <object name="item" x="1098" y="278" width="32" height="32">
    <properties>
     <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Threat Bug&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Threat Bug: main competitors (H&amp;M and Zara).&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
@@ -107,7 +107,7 @@
   <object name="item" x="166" y="78" width="32" height="32">
    <properties>
     <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Weakness Bug&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Weakness Bug: no awareness.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
