@@ -69,23 +69,25 @@ game.PlayScreen = game.AnimatedScreen.extend({
             };
 
             switch (settings.to) {
-                case "rachels_house":
+                case "players_room":
+                    if (!game.stat.load("tutorial1")) {
+                        me.event.publish("notify", [ "Hi, I'm Tadashi. You can show me where to go using the arrow keys." ]);
+                        me.event.publish("notify", [ "Or if you prefer, the WASD keys also work." ]);
+                        me.event.publish("notify", [ "Open the chest with an action key. There may be something useful inside!" ]);
+                        game.stat.save("tutorial1", true);
+                    }
+                    break;
+                case "players_house":
                     if (!game.stat.load("tutorial2")) {
                         me.event.publish("notify", [ "That's Jessica. We should say hi using the action key!" ]);
                         game.stat.save("tutorial2", true);
                     }
                     break;
-                case "earth":
+                case "world":
                     if (!game.stat.load("tutorial3")) {
                         me.event.publish("notify", [ "We should talk to some more people. Maybe we could help them with something!" ]);
                         me.event.publish("notify", [ "If you hold Shift, I promise to hurry as fast as I can!" ]);
                         game.stat.save("tutorial3", true);
-                    }
-                    break;
-                case "general_store":
-                    if (!game.stat.load("tutorial4")) {
-                        me.event.publish("notify", [ "Let's look around a bit; there might be something here we can buy." ]);
-                        game.stat.save("tutorial4", true);
                     }
                     break;
             }
@@ -106,24 +108,17 @@ game.PlayScreen = game.AnimatedScreen.extend({
         game.installHUD();
         game.installExitHandler();
 
-        if (!game.stat.load("tutorial1")) {
-            me.event.publish("notify", [ "Hi, I'm Tadashi. You can show me where to go using the arrow keys." ]);
-            me.event.publish("notify", [ "Or if you prefer, the WASD keys also work." ]);
-            me.event.publish("notify", [ "Open the chest with an action key. There may be something useful inside!" ]);
-            game.stat.save("tutorial1", true);
-        }
-
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "castle_interior",
+                "to"        : "castle_hallway",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
         } else {
             this.loadLevel({
-                "to"        : "world",
+                "to"        : "players_room",
                 "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000

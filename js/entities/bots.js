@@ -115,5 +115,39 @@ game.NPCEntities = {
                 "Back in my days ..."
             ]);
         }
+    }),
+
+    "Dog" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Wooof wooof!"
+            ]);
+        }
+    }),
+
+    "Sheep" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Baaaaa..."
+            ]);
+        }
     })
 };

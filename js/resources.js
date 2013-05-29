@@ -39,6 +39,8 @@ game.resources = {
         "snake",
         "armor_male_green",
         "old_man",
+        "dog_white",
+        "sheep_white",
 
         // Collectibles
         "coin_gold",
@@ -56,17 +58,21 @@ game.resources = {
         "barrel",
         "bridges",
         "buckets",
+        "buffet_table",
         "cabinets",
         "castlefloors_outside",
         "country",
         "castlewalls",
         "castle_outside",
         "castlefloors",
+        "coldwater",
+        "coldwatergrass",
         "dark_library_stuff",
         "dirt",
         "dirt2",
         "doors",
         "dungeon",
+        "dungeon1",
         "farming_fishing",
         "fence",
         "fence_alt",
@@ -105,6 +111,7 @@ game.resources = {
         "trunk",
         "victoria",
         "victorian_house",
+        "watergrass",
         "windmill"
     ],
 
@@ -115,10 +122,12 @@ game.resources = {
         "world",
         "empty_room",
         "library",
+        "farmland",
         "winterfell",
         "dungeon",
-        "castle",
-        "castle_interior"
+        "castle_hallway",
+        "castle_interior",
+	"castle_bedroom"
     ],
 
     /* 1-channel audio. Usually sound effects. */
