@@ -66,6 +66,24 @@ game.PlayScreen = game.AnimatedScreen.extend({
             // When level loads, start music and move Player to the proper location.
             me.game.onLevelLoaded = function onLevelLoaded() {
                 self.onLevelLoaded(settings);
+
+                switch (settings.to) {
+                    case "players_room":
+                        if (!game.stat.load("dialog_players_room")) {
+                            game.dialog([
+                                "...",
+                                "I'm bored ...",
+                                "...",
+                                "Hmm...",
+                                "...",
+                                "I know!",
+                                "I shall dominate the world by 2020!",
+                                "Muahahahaha! :-)"
+                            ]);
+                            game.stat.save("dialog_players_room", true);
+                        }
+                        break;
+                }
             };
 
             switch (settings.to) {
@@ -124,7 +142,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         } else {
             this.loadLevel({
 //                "to"        : "players_room",
-                "to"        : "players_house",
+                "to"        : "farmland",
                 "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000

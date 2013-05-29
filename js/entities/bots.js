@@ -113,6 +113,10 @@ game.NPCEntities = {
                     "Thanks mate, you helped a lot. Now my plants can grow in peace.",
                     "You should head to Laura's field, I think she needs your help ..."
                 ]);
+            } else {
+                game.dialog([
+                    "Oh hello there! Would you like to buy some of my products?"
+                ]);
             }
         }
     }),
@@ -181,6 +185,31 @@ game.NPCEntities = {
             self.parent(actor);
             game.dialog([
                 "Baaaaa..."
+            ]);
+        }
+    }),
+
+    "Swan" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        }
+    }),
+
+    "Chicken" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Cluck... cluck!"
             ]);
         }
     })

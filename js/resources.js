@@ -41,6 +41,8 @@ game.resources = {
         "old_man",
         "dog_white",
         "sheep_white",
+        "swan",
+        "chicken",
 
         // Collectibles
         "coin_gold",
@@ -55,6 +57,8 @@ game.resources = {
         // Tilesets
         "accessories",
         "animwater",
+        "atlas_build",
+        "atlas_obj_misk",
         "barrel",
         "bridges",
         "buckets",
@@ -96,6 +100,9 @@ game.resources = {
         "snowwateralt",
         "stairs",
         "stonepattern",
+        "tiff_b",
+        "tiff_c",
+        "tiff_d",
         "tile_a1",
         "tile_a2",
         "tile_a3",
@@ -127,7 +134,8 @@ game.resources = {
         "dungeon",
         "castle_hallway",
         "castle_interior",
-	"castle_bedroom"
+        "castle_bedroom",
+        "castle_armour_room"
     ],
 
     /* 1-channel audio. Usually sound effects. */
