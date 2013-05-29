@@ -206,11 +206,18 @@ game.NPCEntities = {
 
         "interact" : function interact(actor, callback) {
             var self = this;
-
             self.parent(actor);
+
             game.dialog([
                 "Cluck... cluck!"
-            ]);
+            ], function onCallback() {
+                game.play.loadLevel({
+                    "to"        : "players_room",
+                    "music"     : "bells",
+                    "fadeOut"   : "black",
+                    "duration"  : 1000
+                });
+            });
         }
     })
 };
