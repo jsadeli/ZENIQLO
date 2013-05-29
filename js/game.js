@@ -145,6 +145,7 @@ var game = {
         me.entityPool.add("grandpa", game.NPCEntities.Grandpa);
         me.entityPool.add("dog", game.NPCEntities.Dog);
         me.entityPool.add("sheep", game.NPCEntities.Sheep);
+        me.entityPool.add("farmer", game.NPCEntities.Farmer);
 
         // Interactive objects.
         me.entityPool.add("chest", game.ChestEntity);

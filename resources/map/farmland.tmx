@@ -79,37 +79,37 @@
   </object>
   <object name="item" x="326" y="268" width="32" height="32">
    <properties>
-    <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;farm1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOT point 1&quot;}"/>
+    <property name="image" value="flowers_2"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Strength Bug&quot;}"/>
     <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="15"/>
+    <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object name="item" x="609" y="119" width="32" height="32">
    <properties>
-    <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;farm3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOT point 3&quot;}"/>
+    <property name="image" value="flowers_2"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Opportunities Bug&quot;}"/>
     <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="15"/>
+    <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object name="item" x="1098" y="278" width="32" height="32">
    <properties>
-    <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;farm4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOT point 4&quot;}"/>
+    <property name="image" value="flowers_2"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Threat Bug&quot;}"/>
     <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="15"/>
+    <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
   <object name="item" x="166" y="78" width="32" height="32">
    <properties>
-    <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;farm2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOT point 2&quot;}"/>
+    <property name="image" value="flowers_2"/>
+    <property name="item" value="{&quot;name&quot;:&quot;bug2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Weakness Bug&quot;}"/>
     <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="15"/>
+    <property name="spriteindex" value="1"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
@@ -119,6 +119,40 @@
     <property name="image" value="player"/>
     <property name="spriteheight" value="36"/>
     <property name="spritewidth" value="31"/>
+   </properties>
+  </object>
+  <object name="sheep" x="449" y="221" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;sheep&quot;}]"/>
+    <property name="image" value="sheep_white"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="sheep" x="888" y="338" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;sheep&quot;}]"/>
+    <property name="image" value="sheep_white"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="sheep" x="625" y="491" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;sheep&quot;}]"/>
+    <property name="image" value="sheep_white"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="farmer" x="529" y="450" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;farmer&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;jessica_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:10,&quot;offsety&quot;:16}]"/>
+    <property name="image" value="jessica"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="37"/>
    </properties>
   </object>
  </objectgroup>

@@ -83,6 +83,40 @@ game.NPCEntities = {
         }
     }),
 
+    "Farmer" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            var hasNotCollectedBugs = (!game.HUD.HUDItems.inventory.hasItem("bug1") && !game.HUD.HUDItems.inventory.hasItem("bug2") && !game.HUD.HUDItems.inventory.hasItem("bug3") && !game.HUD.HUDItems.inventory.hasItem("bug4"));
+            var hasCollectedSomeBugs = (game.HUD.HUDItems.inventory.hasItem("bug1") || game.HUD.HUDItems.inventory.hasItem("bug2") || game.HUD.HUDItems.inventory.hasItem("bug3") || game.HUD.HUDItems.inventory.hasItem("bug4"));
+            var hasCollectedAllBugs = (game.HUD.HUDItems.inventory.hasItem("bug1") && game.HUD.HUDItems.inventory.hasItem("bug2") && game.HUD.HUDItems.inventory.hasItem("bug3") && game.HUD.HUDItems.inventory.hasItem("bug4"));
+
+            if (hasNotCollectedBugs) {
+                game.dialog([
+                    "Those damn bugs are eating ma' plants ...",
+                    "Can you help me SWOT em' bugs on the fields?"
+                ]);
+            } else if (hasCollectedSomeBugs && !hasCollectedAllBugs) {
+                game.dialog([
+                    "There are still more of em' pesky SWOT bugs on the fields ..."
+                ]);
+            } else if (hasCollectedAllBugs) {
+                game.dialog([
+                    "Thanks mate, you helped a lot.",
+                    "You should head to Laura's field, I think she needs your help..."
+                ]);
+            }
+        }
+    }),
+
     "Guard" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
