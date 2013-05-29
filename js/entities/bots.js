@@ -138,6 +138,50 @@ game.NPCEntities = {
         }
     }),
 
+    "DungeonGuard" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            var hasNotCollectedKeys = (!game.HUD.HUDItems.inventory.hasItem("key1") && !game.HUD.HUDItems.inventory.hasItem("key2") && !game.HUD.HUDItems.inventory.hasItem("key3"));
+            var hasCollectedSomeKeys = (game.HUD.HUDItems.inventory.hasItem("key1") || game.HUD.HUDItems.inventory.hasItem("key2") || game.HUD.HUDItems.inventory.hasItem("key3"));
+            var hasCollectedAllKeys = (game.HUD.HUDItems.inventory.hasItem("key1") && game.HUD.HUDItems.inventory.hasItem("key2") && game.HUD.HUDItems.inventory.hasItem("key3"));
+
+            if (hasNotCollectedKeys) {
+                game.dialog([
+                    "Help! I lost my keys!"
+                ]);
+            } else if (hasCollectedSomeKeys && !hasCollectedAllKeys) {
+                game.dialog([
+                    "I still need a few of the other keys or else I'll get in trouble..."
+                ]);
+            } else if (hasCollectedAllKeys) {
+                game.dialog([
+                    "Thanks a lot you! You saved my life!",
+                    "As the reward, I shall help you get out of this place."
+                ], function onCallback() {
+                    game.play.loadLevel({
+                        "to"        : "castle_exterior",
+                        "music"     : "bells",
+                        "fadeOut"   : "black",
+                        "duration"  : 1000
+                    });
+                });
+            } else {
+                game.dialog([
+                    "What are you doing here?!"
+                ]);
+            }
+        }
+    }),
+
     "Grandpa" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
