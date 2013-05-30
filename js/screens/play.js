@@ -141,8 +141,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
             });
         } else {
             this.loadLevel({
-//                "to"        : "players_room",
-                "to"        : "farmland",
+                "to"        : "players_room",
                 "music"     : "pink_and_lively",
                 "fadeOut"   : "black",
                 "duration"  : 1000
