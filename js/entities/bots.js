@@ -156,7 +156,7 @@ game.NPCEntities = {
 
             if (hasNotCollectedKeys) {
                 game.dialog([
-                    "Help! I lost my keys!"
+                    "Where are my keys??"
                 ]);
             } else if (hasCollectedSomeKeys && !hasCollectedAllKeys) {
                 game.dialog([
