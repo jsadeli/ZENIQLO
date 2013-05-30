@@ -118,6 +118,7 @@ game.resources = {
         "trunk",
         "victoria",
         "victorian_house",
+        "water",
         "watergrass",
         "windmill"
     ],
