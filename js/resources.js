@@ -137,6 +137,8 @@ game.resources = {
         "castle_hallway",
         "castle_interior",
         "castle_bedroom",
+        "castle_kitchen",
+        "castle_storage",
         "castle_armour_room"
     ],
 

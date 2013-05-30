@@ -63,17 +63,17 @@
     <property name="spritewidth" value="31"/>
    </properties>
   </object>
-  <object name="exit" x="34" y="452" width="58" height="28">
+  <object name="exit" x="37" y="461" width="58" height="18">
    <properties>
-    <property name="dir" value="up"/>
+    <property name="dir" value="down"/>
     <property name="fade" value="black"/>
-    <property name="location" value="1536, 128"/>
+    <property name="location" value="1536, 160"/>
     <property name="to" value="castle_hallway"/>
    </properties>
   </object>
   <object name="chest" x="254" y="128" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;secret_stash&quot;, &quot;description&quot;:&quot;Armour Room. Design by Tiffany Sadeli.&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;secret_stash_armour_room&quot;, &quot;description&quot;:&quot;Armour Room. Design by Tiffany Sadeli.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -83,7 +83,7 @@
   <object name="item" x="410" y="127" width="35" height="33">
    <properties>
     <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;book&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;...anything...&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;armour&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Magnificently magical metal.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="15"/>
     <property name="spritewidth" value="32"/>
