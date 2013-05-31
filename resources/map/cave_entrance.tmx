@@ -61,16 +61,24 @@
     <property name="spritewidth" value="31"/>
    </properties>
   </object>
+  <object name="swan" x="307" y="438" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;swan&quot;}]"/>
+    <property name="image" value="swan"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="collision" width="14" height="20">
   <object x="0" y="639">
    <polyline points="0,0 1,-403 160,-404 161,-385 193,-384 192,-403 205,-404 213,-385 219,-383 215,-464 200,-472 34,-475 33,-507 2,-512 2,-531 42,-533 41,-582 53,-591 81,-589 87,-571 87,-536 102,-531 360,-531 371,-549 367,-607 413,-607 415,-478 279,-476 265,-454 263,-382 272,-382 272,-404 448,-403 449,0 1,0"/>
   </object>
   <object x="1" y="385">
-   <polyline points="0,0 95,0 96,122 -1,122"/>
+   <polyline points="1,6 95,5 95,114 3,114"/>
   </object>
   <object x="448" y="385">
-   <polyline points="0,0 -288,0 -287,124 2,126"/>
+   <polyline points="0,8 -287,7 -287,113 1,113"/>
   </object>
  </objectgroup>
 </map>

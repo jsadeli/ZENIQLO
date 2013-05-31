@@ -88,6 +88,7 @@ game.resources = {
         "housey",
         "hole",
         "holek",
+        "ice",
         "inside",
         "kitchen",
         "misc",

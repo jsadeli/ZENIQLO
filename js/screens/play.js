@@ -68,19 +68,29 @@ game.PlayScreen = game.AnimatedScreen.extend({
                 self.onLevelLoaded(settings);
 
                 switch (settings.to) {
-                    case "players_room":
-                        if (!game.stat.load("dialog_players_room")) {
+//                    case "players_room":
+//                        if (!game.stat.load("dialog_players_room")) {
+//                            game.dialog([
+//                                "...",
+//                                "I'm bored ...",
+//                                "...",
+//                                "Hmm...",
+//                                "...",
+//                                "I know!",
+//                                "I shall dominate the world by 2020!",
+//                                "Muahahahaha! :-)"
+//                            ]);
+//                            game.stat.save("dialog_players_room", true);
+//                        }
+//                        break;
+                    case "winterfell":
+                        if (!game.stat.load("dialog_winterfell")) {
                             game.dialog([
                                 "...",
-                                "I'm bored ...",
-                                "...",
-                                "Hmm...",
-                                "...",
-                                "I know!",
-                                "I shall dominate the world by 2020!",
-                                "Muahahahaha! :-)"
+                                "It's so cold...",
+                                "Winter is coming..."
                             ]);
-                            game.stat.save("dialog_players_room", true);
+                            game.stat.save("dialog_winterfell", true);
                         }
                         break;
                 }
@@ -134,7 +144,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "castle_hallway",
+                "to"        : "winterfell",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000

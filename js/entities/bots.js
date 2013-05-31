@@ -78,7 +78,7 @@ game.NPCEntities = {
             self.parent(actor);
 
             game.dialog([
-                "I'm Whitey, what's your name?"
+                "Have you talked to the farmer? I think she needs your help."
             ]);
         }
     }),
@@ -118,6 +118,26 @@ game.NPCEntities = {
                     "Oh hello there! Would you like to buy some of my products?"
                 ]);
             }
+        }
+    }),
+
+    "SnowGirl" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "If you want to conquer the world, you shall need to go to the other side.",
+                "These magical marketing doors shall help you or doom you, choose wisely.",
+                "I can only show you the door. You have to walk through it."        // the matrix reference, hehe
+            ]);
         }
     }),
 
@@ -254,14 +274,7 @@ game.NPCEntities = {
 
             game.dialog([
                 "Cluck... cluck!"
-            ], function onCallback() {
-                game.play.loadLevel({
-                    "to"        : "players_room",
-                    "music"     : "bells",
-                    "fadeOut"   : "black",
-                    "duration"  : 1000
-                });
-            });
+            ]);
         }
     })
 };

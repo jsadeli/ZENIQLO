@@ -147,6 +147,7 @@ var game = {
         me.entityPool.add("dog", game.NPCEntities.Dog);
         me.entityPool.add("sheep", game.NPCEntities.Sheep);
         me.entityPool.add("farmer", game.NPCEntities.Farmer);
+        me.entityPool.add("snow_girl", game.NPCEntities.SnowGirl);
         me.entityPool.add("swan",game.NPCEntities.Swan);
         me.entityPool.add("chicken",game.NPCEntities.Chicken);
 
