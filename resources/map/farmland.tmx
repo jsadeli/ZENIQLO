@@ -207,7 +207,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
-    <property name="to" value="winterfell"/>
+    <property name="to" value="cave_entrance"/>
    </properties>
   </object>
  </objectgroup>
