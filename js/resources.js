@@ -136,6 +136,8 @@ game.resources = {
         "farmland",
         "cave_entrance",
         "cave",
+        "cave_tiny",
+        "cave_shortcut",
         "winterfell",
         "dungeon",
         "castle_exterior",
@@ -144,7 +146,8 @@ game.resources = {
         "castle_bedroom",
         "castle_kitchen",
         "castle_storage",
-        "castle_armour_room"
+        "castle_armour_room",
+        "castle_server_room"
     ],
 
     /* 1-channel audio. Usually sound effects. */
@@ -231,7 +234,7 @@ game.credits = [
     "",
     "",
     "",
-    "",
+    "  It was all just a dream...",
     "",
     "",
     "",

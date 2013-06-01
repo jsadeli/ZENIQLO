@@ -37,7 +37,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
-    <property name="to" value="dungeon_other"/>
+    <property name="to" value="castle_exterior"/>
    </properties>
   </object>
   <object name="item" x="337" y="147" width="32" height="32">

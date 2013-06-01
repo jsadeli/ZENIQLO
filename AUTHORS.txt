@@ -165,6 +165,10 @@ Jeffrey Sadeli
 Tiffany Sadeli
  - armor_male_green.png
  - old_man.png
+ - chicken.png
+ - swan.png
+ - sheep_white.png
+ - dog_white.png
 
 Community Audio (http://archive.org/details/opensource_audio)
  - nyan_cat_original.ogg

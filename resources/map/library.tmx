@@ -64,6 +64,78 @@
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
+  <object name="item" x="229" y="293" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;UNIQLO Clothing Recycling: to maximize the value of clothing by ensuring its utility to the very end of its usable life.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="494" y="293" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;UNIQLO Recovery Assistance Project: help March 2011 earthquake victims through clothing donations.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="375" y="294" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Setouchi Olive Foundation: an NGO established in 2000 with the aim to plant one million trees on the coastal region of Seto Inland Sea.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="306" y="293" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;UNIQLO Social Business: launched in 2010, help addressing Bangladesh's most pressing social issues (poverty, health, sanitation, and education) through job creation.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="495" y="197" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Special Olympics Partner: supports the organization through employee volunteer program and the donation of uniform.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="378" y="194" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Employee with Disability: a goal to hire at least one disabled person at each store.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="325" y="194" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Charity Project: proud sponsor of Hellosmile Project to raise awareness of cervical cancer by producing a number of UT T-shirt designs featuring Hello Kitty.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
+  <object name="item" x="227" y="194" width="32" height="32">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;csr&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Clothes for Smile: partnering with UNIQLO's Global Brand Ambassador Novak Djokovic to establish a fund of one billion yen and use it to bring hope to kids all over the world.&quot;}"/>
+    <property name="spriteheight" value="32"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="32"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="collision" width="19" height="14">
   <object x="449" y="416">

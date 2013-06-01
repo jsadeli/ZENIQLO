@@ -58,9 +58,10 @@
   </object>
   <object name="exit" x="388" y="227" width="24" height="24">
    <properties>
-    <property name="dir" value="up"/>
+    <property name="dir" value="down"/>
     <property name="fade" value="black"/>
-    <property name="to" value="dungeon"/>
+    <property name="location" value="752,512"/>
+    <property name="to" value="winterfell"/>
    </properties>
   </object>
   <object name="exit" x="5" y="297" width="44" height="81">
@@ -82,7 +83,7 @@
   </object>
   <object name="chest" x="479" y="127" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;warp&quot;,&quot;data&quot;:{&quot;to&quot;:&quot;empty_room&quot;,&quot;music&quot;:&quot;bells&quot;,&quot;fade&quot;:&quot;black&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Product&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -91,7 +92,7 @@
   </object>
   <object name="chest" x="738" y="551" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;warp&quot;,&quot;data&quot;:{&quot;to&quot;:&quot;empty_room&quot;,&quot;music&quot;:&quot;bells&quot;,&quot;fade&quot;:&quot;black&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Promotion&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -100,7 +101,7 @@
   </object>
   <object name="chest" x="753" y="293" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;warp&quot;,&quot;data&quot;:{&quot;to&quot;:&quot;empty_room&quot;,&quot;music&quot;:&quot;bells&quot;,&quot;fade&quot;:&quot;black&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Price&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -109,7 +110,7 @@
   </object>
   <object name="chest" x="959" y="419" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;warp&quot;,&quot;data&quot;:{&quot;to&quot;:&quot;empty_room&quot;,&quot;music&quot;:&quot;bells&quot;,&quot;fade&quot;:&quot;black&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Place&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -118,9 +119,72 @@
   </object>
   <object name="exit" x="323" y="226" width="24" height="24">
    <properties>
-    <property name="dir" value="up"/>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="528,64"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="580" y="31" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="800,224"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="740" y="194" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
     <property name="fade" value="black"/>
     <property name="to" value="dungeon"/>
+   </properties>
+  </object>
+  <object name="exit" x="964" y="323" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="752,512"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="1092" y="322" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="528,64"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="836" y="192" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="to" value="dungeon"/>
+   </properties>
+  </object>
+  <object name="exit" x="453" y="35" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="1040,352"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="804" y="482" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="1040,352"/>
+    <property name="to" value="winterfell"/>
+   </properties>
+  </object>
+  <object name="exit" x="677" y="480" width="24" height="24">
+   <properties>
+    <property name="dir" value="down"/>
+    <property name="fade" value="black"/>
+    <property name="location" value="800,224"/>
+    <property name="to" value="winterfell"/>
    </properties>
   </object>
  </objectgroup>

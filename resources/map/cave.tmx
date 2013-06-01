@@ -51,6 +51,13 @@
     <property name="to" value="winterfell"/>
    </properties>
   </object>
+  <object name="exit" x="198" y="78" width="22" height="24">
+   <properties>
+    <property name="dir" value="up"/>
+    <property name="fade" value="black"/>
+    <property name="to" value="cave_tiny"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="overlay" width="44" height="22">
   <data encoding="base64">
