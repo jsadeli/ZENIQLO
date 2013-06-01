@@ -1,13 +1,13 @@
-# Zeniqlo
+# ZENIQLO
 
 ## About
 
 A short game about ZENIQLO.
-Made as an educational exercise in marketing class presentation.
+Made as an educational exercise in marketing class presentation. Done in ~10 days from idea to completion and zero game development experience.
 
 ## License
 
-Special thanks to [melonJS](http://www.melonjs.org/) and Jay Oster's [Neverwell Moor](http://git.kodewerx.org/neverwell-moor/) project.
+Special thanks to [melonJS](http://www.melonjs.org/), the [Liberated Pixel Cup](http://lpc.opengameart.org/), and Jay Oster's [Neverwell Moor](http://git.kodewerx.org/neverwell-moor/) project. Without which this project will not be possible under the constraints.
 
 This code is released to the public under a dual license.
 The full license texts are available as follows:
@@ -22,7 +22,7 @@ For more details license information, please see resources.js
 
 ### Requirements
 
-- A browser supporting HTML5 canvas (tested on Chrome)
+A browser supporting HTML5 canvas and Ogg audio (tested on Google Chrome).
 
 ## Tools
 
