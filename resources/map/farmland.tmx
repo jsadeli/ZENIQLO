@@ -101,48 +101,32 @@
     <property name="to" value="empty_room"/>
    </properties>
   </object>
-  <object name="bug1" x="326" y="268" width="32" height="32">
+  <object name="bug1" x="326" y="268" width="16" height="16">
    <properties>
-    <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Strength Bug: experience and consistency.&quot;}"/>
-    <property name="mass" value="Infinity"/>
-    <property name="npc_standing" value="true"/>
-    <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="1"/>
-    <property name="spritewidth" value="32"/>
+    <property name="image" value="red_butterfly"/>
+    <property name="spriteheight" value="16"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug3" x="604" y="188" width="32" height="32">
+  <object name="bug3" x="604" y="188" width="16" height="16">
    <properties>
-    <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Opportunities Bug: expand activities, increase reputation, and leverage other brands.&quot;}"/>
-    <property name="mass" value="Infinity"/>
-    <property name="npc_standing" value="true"/>
-    <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="1"/>
-    <property name="spritewidth" value="32"/>
+    <property name="image" value="red_butterfly"/>
+    <property name="spriteheight" value="16"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug4" x="1098" y="216" width="32" height="32">
+  <object name="bug4" x="1098" y="216" width="16" height="16">
    <properties>
-    <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Threat Bug: main competitors (H&amp;M and Zara).&quot;}"/>
-    <property name="mass" value="Infinity"/>
-    <property name="npc_standing" value="true"/>
-    <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="1"/>
-    <property name="spritewidth" value="32"/>
+    <property name="image" value="red_butterfly"/>
+    <property name="spriteheight" value="16"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug2" x="166" y="78" width="32" height="32">
+  <object name="bug2" x="166" y="78" width="16" height="16">
    <properties>
-    <property name="image" value="flowers_2"/>
-    <property name="item" value="{&quot;name&quot;:&quot;bug2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;SWOTed Weakness Bug: no awareness.&quot;}"/>
-    <property name="mass" value="Infinity"/>
-    <property name="npc_standing" value="true"/>
-    <property name="spriteheight" value="32"/>
-    <property name="spriteindex" value="1"/>
-    <property name="spritewidth" value="32"/>
+    <property name="image" value="red_butterfly"/>
+    <property name="spriteheight" value="16"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
   <object name="player" x="44" y="615" width="32" height="32">
