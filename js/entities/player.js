@@ -32,6 +32,15 @@ game.PlayerEntity = game.NPC.extend({
         // Call the constructor.
         this.parent(x, y, settings);
 
+        // Add weapon, if any.
+        if (game.HUD) {
+            var weapon = game.HUD.HUDItems.inventory.getWeapon();
+            if (weapon) {
+                this.addCompositionItem(weapon);
+                this.setCompositionOrder(weapon.name, "player");
+            }
+        }
+
         // Player's mass is always 1.
         this.body.setMass(1);
 
@@ -89,6 +98,9 @@ game.PlayerEntity = game.NPC.extend({
                 break;
             case "item":
                 game.HUD.HUDItems.inventory.addItem(message.data);
+                break;
+            case "weapon":
+                game.HUD.HUDItems.inventory.addWeapon(message.data);
                 break;
             case "coins":
                 game.HUD.updateItemValue("coins", message.data);

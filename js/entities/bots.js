@@ -22,6 +22,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.value = 1000;
             this.parent(x, y, settings);
+            this.invincible = true;
 
             // Adjust collision bounding box.
             this.adjustBoxShape(0, -10, 25, 20);
@@ -50,6 +51,7 @@ game.NPCEntities = {
     "James" : game.NPC.extend({
         "init": function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -68,6 +70,7 @@ game.NPCEntities = {
     "Whitey" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -86,6 +89,7 @@ game.NPCEntities = {
     "Farmer" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -133,6 +137,7 @@ game.NPCEntities = {
     "SnowGirl" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -153,6 +158,7 @@ game.NPCEntities = {
     "Guard" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -170,6 +176,7 @@ game.NPCEntities = {
     "DungeonGuard" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -214,6 +221,7 @@ game.NPCEntities = {
     "Grandpa" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -290,6 +298,7 @@ game.NPCEntities = {
     "Princess" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);
         },

@@ -60,6 +60,9 @@ game.NPC = game.Sprite.extend({
     // A helper constant.
     "walk_angle" : Math.sin((45).degToRad()),
 
+    // whether or not the NPC can be 'hit'
+    "invincible" : false,
+
     // Health.
     "hearts" : 3,
 
@@ -119,6 +122,11 @@ game.NPC = game.Sprite.extend({
 
     "hit" : function hit(power) {
         var self = this;
+
+        if (self.invincible) {
+            return;
+        }
+
         me.audio.play("hurt");
 
         // FIXME: "pain" sound.

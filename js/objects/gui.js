@@ -44,19 +44,24 @@ game.installHUD = function HUD() {
     });
 
     var inventory = HUD_Item.extend({
-        "contents" : [],
+        "contents" : [],    // what this inventory contains.
+        "weapon" : null,
 
         "init" : function init(x, y, contents) {
             var self = this;
             self.parent(x, y, 0);
             contents.forEach(function forEach(item) {
                 self.addItem(item);
-            })
+            });
 
             this.contents = (game.stat.load("inventory_contents") || []).map(function map(item) {
                 self.cacheIcon(item);
                 return item;
             });
+            this.weapon = game.stat.load("inventory_weapon") || null;
+            if (this.weapon) {
+                this.cacheIcon(this.weapon);
+            }
         },
 
         "cacheIcon" : function cacheIcon(item) {
@@ -69,6 +74,28 @@ game.installHUD = function HUD() {
                     "y" : ~~(item.icon / count) * item.spriteheight
                 };
             }
+        },
+
+        "addWeapon" : function addWeapon(item) {
+            this.updated = true;
+            this.weapon = item;
+
+            me.audio.play("fanfare");
+            me.event.publish("acquire weapon", [ item.name ]);
+            game.dialog([ item.description ]);
+
+            game.stat.save("inventory_weapon", item);
+
+            if (!game.stat.load("tutorial5")) {
+                me.event.publish("notify", [ "At last I can defend myself! Use it with the attack key (Z or APOSTROPHE)" ]);
+                game.stat.save("tutorial5", true);
+            }
+
+            // Create weapon sprite.
+            // FIXME: Remove old sprite if a weapon was already loaded.
+            this.cacheIcon(item);
+            game.player.addCompositionItem(item);
+            game.player.setCompositionOrder(item.name, "rachel");
         },
 
         "addItem" : function addItem(item) {
@@ -91,16 +118,28 @@ game.installHUD = function HUD() {
             }));
         },
 
+        "removeWeapon" : function removeWeapon() {
+            this.weapon = null;
+        },
+
         "removeItem" : function removeItem(idx) {
             this.contents.splice(idx, 1);
+        },
+
+        "getWeapon" : function getWeapon() {
+            return this.weapon;
         },
 
         "getItem" : function getItem(idx) {
             return this.contents[idx];
         },
 
+        "hasWeapon" : function hasWeapon() {
+            return (this.weapon != null);
+        },
+
         "hasItem" : function hasItem(name) {
-            return this.contents.some(function some(item) {
+            return this.contents.concat(this.weapon).some(function some(item) {
                 return game.isObject(item) && (item.name === name);
             });
         },
