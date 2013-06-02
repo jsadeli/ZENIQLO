@@ -48,6 +48,7 @@
     <property name="image" value="player"/>
     <property name="spriteheight" value="36"/>
     <property name="spritewidth" value="31"/>
+    <property name="stand_up" value="2"/>
    </properties>
   </object>
   <object name="exit" x="1154" y="129" width="60" height="24">
@@ -57,7 +58,7 @@
     <property name="to" value="castle_interior"/>
    </properties>
   </object>
-  <object name="exit" x="111" y="127" width="30" height="30">
+  <object name="exit" x="113" y="124" width="30" height="30">
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
@@ -79,18 +80,45 @@
     <property name="to" value="castle_exterior"/>
    </properties>
   </object>
-  <object name="exit" x="691" y="126" width="30" height="30">
+  <object name="exit" x="690" y="122" width="30" height="30">
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
     <property name="to" value="castle_kitchen"/>
    </properties>
   </object>
-  <object name="exit" x="399" y="127" width="30" height="30">
+  <object name="exit" x="401" y="120" width="30" height="30">
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
     <property name="to" value="castle_server_room"/>
+   </properties>
+  </object>
+  <object name="item" x="96" y="154" width="62" height="8">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;door1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Unlocked: integrated social marketing.&quot;}"/>
+    <property name="spriteheight" value="5"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="64"/>
+   </properties>
+  </object>
+  <object name="item" x="384" y="150" width="62" height="8">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;door2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Unlocked: market entrance.&quot;}"/>
+    <property name="spriteheight" value="5"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="64"/>
+   </properties>
+  </object>
+  <object name="item" x="676" y="150" width="62" height="8">
+   <properties>
+    <property name="image" value="accessories"/>
+    <property name="item" value="{&quot;name&quot;:&quot;door3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Unlocked: market entrance.&quot;}"/>
+    <property name="spriteheight" value="5"/>
+    <property name="spriteindex" value="15"/>
+    <property name="spritewidth" value="64"/>
    </properties>
   </object>
  </objectgroup>
