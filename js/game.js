@@ -150,6 +150,7 @@ var game = {
         me.entityPool.add("snow_girl", game.NPCEntities.SnowGirl);
         me.entityPool.add("swan",game.NPCEntities.Swan);
         me.entityPool.add("chicken",game.NPCEntities.Chicken);
+        me.entityPool.add("princess",game.NPCEntities.Princess);
 
         // Interactive objects.
         me.entityPool.add("chest", game.ChestEntity);

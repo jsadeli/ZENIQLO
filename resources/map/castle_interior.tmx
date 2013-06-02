@@ -91,13 +91,6 @@
     <property name="spritewidth" value="29"/>
    </properties>
   </object>
-  <object name="exit" x="310" y="128" width="24" height="24">
-   <properties>
-    <property name="dir" value="up"/>
-    <property name="fade" value="black"/>
-    <property name="to" value="dungeon"/>
-   </properties>
-  </object>
   <object name="exit" x="289" y="1143" width="62" height="22">
    <properties>
     <property name="dir" value="down"/>
@@ -122,6 +115,16 @@
     <property name="npc_standing" value="true"/>
     <property name="spriteheight" value="36"/>
     <property name="spritewidth" value="31"/>
+   </properties>
+  </object>
+  <object name="princess" x="306" y="355" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;princess&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;abi_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:18}]"/>
+    <property name="image" value="abi"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
    </properties>
   </object>
  </objectgroup>
@@ -186,6 +189,9 @@
   </object>
   <object x="48" y="1089">
    <polyline points="0,0 -14,1 -14,-928 252,-929 252,-979 294,-978 294,-930 560,-929 560,79"/>
+  </object>
+  <object x="296" y="161">
+   <polyline points="0,0 69,-3"/>
   </object>
  </objectgroup>
 </map>
