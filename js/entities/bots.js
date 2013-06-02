@@ -111,8 +111,17 @@ game.NPCEntities = {
             } else if (hasCollectedAllBugs) {
                 game.dialog([
                     "Thanks mate, you helped a lot. Now my plants can grow in peace.",
-                    "You should head to Laura's field, I think she needs your help ..."
-                ]);
+                    "Continue heading East on your journey.",
+                    "To thank you for your help, I shall teleport you as far as I can.",
+                    "Get ready..."
+                ], function onCallback() {
+                    game.play.loadLevel({
+                        "to"        : "winterfell",
+                        "music"     : "bells",
+                        "fadeOut"   : "black",
+                        "duration"  : 1000
+                    });
+                });
             } else {
                 game.dialog([
                     "Oh hello there! Would you like to buy some of my products?"
@@ -275,6 +284,32 @@ game.NPCEntities = {
             game.dialog([
                 "Cluck... cluck!"
             ]);
+        }
+    }),
+
+    "Princess" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "Congratulations! You've collected all the important marketing competencies.",
+                "With that, you can finally reach your goal of world dominance.",
+                "We shall meet again, Tadashi kun.",
+                "Until next time",
+                "Sayonara",
+                "Good bye",
+                "Later",
+                "Jaa~~.."
+            ], function onCallback() {
+                me.state.change(me.state.CREDITS);
+            });
         }
     })
 };
