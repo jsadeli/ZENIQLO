@@ -165,9 +165,20 @@ game.resources = {
     "bgm" : [
         "bells",
         "del_erad",
+        "nyan_cat_on_piano",
+        "nyan_cat_original",
         "pink_and_lively",
         "random_and_cheap",
-        "nyan_cat_original"
+        "sm_beware_the_forest_mushrooms",
+        "sm_still_the_road_is_full_of_danger",
+        "sm_the_dungeon",
+        "sm_weapons_factory",
+        "sm_where_am_i_going",
+        "time_to_run_finale_dex_britain",
+        "zelda_house",
+        "zelda_lokiri_forest",
+        "zelda_theme",
+        "zelda_windmill"
     ]
 };
 
@@ -191,16 +202,16 @@ game.story = {
             "image" : null,
             "messages" : [
                 "A long time ago (1963), in a land far, far away (Japan) ...",
-                "A guy called Tadashi-kun decided to open a clothing shop."
+                "A guy called Tadashi-kun decided to start his business venture in clothes."
             ]
         },
         {
             "image" : null,
             "messages" : [
-                "The company was called Ogori Shoji and they only sell men clothes.",
-                "In 1985, the company decided to expand their business and starts selling",
-                "unisex casual wear. This new company is called UNIQLO (Unique Clothing)",
-                "while the original company is renamed to Fast Retailing in 1991."
+                "Ogori Shoji, the original company, only sold men clothes. In 1985,",
+                "Tadashi-kun decided to expand the business by selling unisex casual wear.",
+                "Thus, a new company under the name UNIQLO (Unique Clothing) was born,",
+                "while the parent company was renamed to Fast Retailing in 1991.",
             ]
         },
         {
