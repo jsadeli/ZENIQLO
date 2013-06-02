@@ -117,7 +117,7 @@ game.NPCEntities = {
                 ], function onCallback() {
                     game.play.loadLevel({
                         "to"        : "winterfell",
-                        "music"     : "bells",
+//                        "music"     : "bells",
                         "fadeOut"   : "black",
                         "duration"  : 1000
                     });
@@ -198,7 +198,7 @@ game.NPCEntities = {
                 ], function onCallback() {
                     game.play.loadLevel({
                         "to"        : "castle_exterior",
-                        "music"     : "bells",
+                        "music"     : "zelda_windmill",
                         "fadeOut"   : "black",
                         "duration"  : 1000
                     });
@@ -302,11 +302,12 @@ game.NPCEntities = {
                 "Congratulations! You've collected all the important marketing competencies.",
                 "With that, you can finally reach your goal of world dominance.",
                 "We shall meet again, Tadashi kun.",
-                "Until next time",
-                "Sayonara",
-                "Good bye",
-                "Later",
-                "Jaa~~.."
+                "I wish you all the best in your journey.",
+                "Until next time...",
+                "Sayonara...",
+                "Good bye...",
+                "Later...",
+                "Jaa~~~"
             ], function onCallback() {
                 me.state.change(me.state.CREDITS);
             });
