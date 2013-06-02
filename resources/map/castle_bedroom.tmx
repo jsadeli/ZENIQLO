@@ -63,6 +63,12 @@
     <property name="to" value="castle_hallway"/>
    </properties>
   </object>
+  <object name="piano" x="77" y="248" width="32" height="32">
+   <properties>
+    <property name="image" value="blank"/>
+    <property name="music" value="nyan_cat_on_piano"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="overlays" width="13" height="13">
   <data encoding="base64">

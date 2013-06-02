@@ -158,6 +158,7 @@ var game = {
 
         // Interactive objects.
         me.entityPool.add("chest", game.ChestEntity);
+        me.entityPool.add("piano", game.PianoEntity);
         me.entityPool.add("item", game.ItemEntity);
 
         // Static objects.

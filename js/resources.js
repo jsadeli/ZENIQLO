@@ -57,6 +57,7 @@ game.resources = {
         "silver_keys",
 
         // Tilesets
+        "blank",
         "accessories",
         "animwater",
         "atlas_build",
