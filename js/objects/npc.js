@@ -64,7 +64,7 @@ game.NPC = game.Sprite.extend({
     "invincible" : false,
 
     // Health.
-    "hearts" : 3,
+    "hearts" : 5,
 
     // Attack strength.
     "power" : 1,

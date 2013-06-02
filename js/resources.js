@@ -43,7 +43,8 @@ game.resources = {
         "sheep_white",
         "swan",
         "chicken",
-        "red_butterfly",
+//        "red_butterfly",
+        "black_butterfly",
 
         // Collectibles
 //        "coin_gold",

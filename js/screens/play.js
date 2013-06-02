@@ -155,7 +155,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "dungeon",
+                "to"        : "farmland",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000

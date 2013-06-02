@@ -312,6 +312,7 @@ game.NPCEntities = {
     "Dog" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.hearts = 3;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -329,6 +330,7 @@ game.NPCEntities = {
     "Sheep" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.hearts = 3;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -346,6 +348,7 @@ game.NPCEntities = {
     "Swan" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.hearts = 3;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         }
@@ -354,6 +357,7 @@ game.NPCEntities = {
     "Chicken" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
+            this.hearts = 2;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
