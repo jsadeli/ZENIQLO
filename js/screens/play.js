@@ -93,6 +93,16 @@ game.PlayScreen = game.AnimatedScreen.extend({
                             game.stat.save("dialog_winterfell", true);
                         }
                         break;
+                    case "dungeon":
+                        if (!game.stat.load("dialog_dungeon")) {
+                            game.dialog([
+                                "Oh no!",
+                                "Wrong choice... blast it!",
+                                "I need to get out of here, maybe those success keys will help..."
+                            ]);
+                            game.stat.save("dialog_dungeon", true);
+                        }
+                        break;
                 }
             };
 
@@ -123,6 +133,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
                         me.event.publish("notify", [ "That's Uuchka. We should say hi using the action key!" ]);
                         game.stat.save("hint_farmland", true);
                     }
+                    break;
             }
 
             // Load the first level.
@@ -144,7 +155,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "winterfell",
+                "to"        : "castle_hallway",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000
@@ -152,7 +163,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         } else {
             this.loadLevel({
                 "to"        : "players_room",
-                "music"     : "pink_and_lively",
+                "music"     : "sm_where_am_i_going",
                 "fadeOut"   : "black",
                 "duration"  : 1000
             });
