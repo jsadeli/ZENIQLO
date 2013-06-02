@@ -45,9 +45,9 @@ game.resources = {
         "chicken",
 
         // Collectibles
-        "coin_gold",
-        "coin_silver",
-        "coin_shadow",
+//        "coin_gold",
+//        "coin_silver",
+//        "coin_shadow",
         "hammer",
 
         // Interactive objects
@@ -163,19 +163,19 @@ game.resources = {
 
     /* 2-channel audio. Usually music. */
     "bgm" : [
-        "bells",
-        "del_erad",
+//        "bells",
+//        "del_erad",
         "nyan_cat_on_piano",
-        "nyan_cat_original",
-        "pink_and_lively",
+//        "nyan_cat_original",
+//        "pink_and_lively",
         "random_and_cheap",
         "sm_beware_the_forest_mushrooms",
         "sm_still_the_road_is_full_of_danger",
         "sm_the_dungeon",
-        "sm_weapons_factory",
+//        "sm_weapons_factory",
         "sm_where_am_i_going",
-        "time_to_run_finale_dex_britain",
-        "zelda_house",
+//        "time_to_run_finale_dex_britain",
+//        "zelda_house",
         "zelda_lokiri_forest",
         "zelda_theme",
         "zelda_windmill"
