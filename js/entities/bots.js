@@ -22,7 +22,6 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.value = 1000;
             this.parent(x, y, settings);
-            this.invincible = true;
 
             // Adjust collision bounding box.
             this.adjustBoxShape(0, -10, 25, 20);
@@ -51,7 +50,6 @@ game.NPCEntities = {
     "James" : game.NPC.extend({
         "init": function init(x, y, settings) {
             this.parent(x, y, settings);
-            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -70,7 +68,6 @@ game.NPCEntities = {
     "Whitey" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
-            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -137,6 +134,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
+            this.maxDistance = 50;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -146,7 +144,7 @@ game.NPCEntities = {
 
             self.parent(actor);
             game.dialog([
-                "SWOTed Strength Bug: experience and consistency."
+                "Strength Bug: experience and consistency."
             ]);
         }
     }),
@@ -155,6 +153,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
+            this.maxDistance = 50;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -164,7 +163,7 @@ game.NPCEntities = {
 
             self.parent(actor);
             game.dialog([
-                "SWOTed Weakness Bug: no awareness."
+                "Weakness Bug: no awareness."
             ]);
         }
     }),
@@ -173,6 +172,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
+            this.maxDistance = 50;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -182,7 +182,7 @@ game.NPCEntities = {
 
             self.parent(actor);
             game.dialog([
-                "SWOTed Opportunities Bug: expand activities, increase reputation, and leverage other brands."
+                "Opportunities Bug: expand activities, increase reputation, and leverage other brands."
             ]);
         }
     }),
@@ -191,6 +191,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
+            this.maxDistance = 50;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -200,7 +201,7 @@ game.NPCEntities = {
 
             self.parent(actor);
             game.dialog([
-                "SWOTed Threat Bug: main competitors (H&M and Zara)."
+                "Threat Bug: main competitors (H&M and Zara)."
             ]);
         }
     }),
@@ -208,7 +209,6 @@ game.NPCEntities = {
     "SnowGirl" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
-            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -295,7 +295,6 @@ game.NPCEntities = {
     "Grandpa" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
-            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
