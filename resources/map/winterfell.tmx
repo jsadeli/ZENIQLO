@@ -83,7 +83,7 @@
   </object>
   <object name="chest" x="479" y="127" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Product&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Pricing] UNIQLO's: no seasonal sales but has timely product pricing. H&amp;M's: has season sales but sales timing is mysterious.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -92,7 +92,7 @@
   </object>
   <object name="chest" x="738" y="551" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Promotion&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Place] UNIQLO's online store ships to more countries than H&amp;M's.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -101,7 +101,7 @@
   </object>
   <object name="chest" x="753" y="293" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Price&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Product] UNIQLO's functional materials (HEATTECH, Ultra Light Down Jacket) vs. H&amp;M's outsourcing to Asia and Turkey.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
@@ -110,7 +110,7 @@
   </object>
   <object name="chest" x="959" y="419" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;Place&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Promotion] UNIQLO's: Advertisements for core products (HEATTECH, Polo, Ultra Light Down Jackets) and customer communication. H&amp;M's: Advertising, internet promotions, and inviting top fashion designers.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
