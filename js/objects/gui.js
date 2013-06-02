@@ -86,9 +86,9 @@ game.installHUD = function HUD() {
 
             game.stat.save("inventory_weapon", item);
 
-            if (!game.stat.load("tutorial5")) {
-                me.event.publish("notify", [ "At last I can defend myself! Use it with the attack key (Z or APOSTROPHE)" ]);
-                game.stat.save("tutorial5", true);
+            if (!game.stat.load("tutorial_weapon_pickup")) {
+                me.event.publish("notify", [ "At last I can SWOT those bugs! Use it with the attack key (Z or APOSTROPHE)" ]);
+                game.stat.save("tutorial_weapon_pickup", true);
             }
 
             // Create weapon sprite.

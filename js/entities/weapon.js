@@ -165,9 +165,9 @@ game.Weapon = me.AnimationSheet.extend({
                 var len = self.settings.sfx_whomp.length - 1;
                 me.audio.play(self.settings.sfx_whomp[Number.prototype.random(0, len)]);
 
-                if (!game.stat.load("tutorial6")) {
-                    me.event.publish("notify", [ "MOG! This mallet is amerzing!! I should probably be careful where I swing it..." ]);
-                    game.stat.save("tutorial6", true);
+                if (!game.stat.load("tutorial_hammer_swing")) {
+                    me.event.publish("notify", [ "ZOMG! This mallet is amerzing!! I should probably be careful where I swing it..." ]);
+                    game.stat.save("tutorial_hammer_swing", true);
                 }
 
                 // Create a BB for the whomp.
