@@ -134,7 +134,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
-            this.maxDistance = 50;
+            this.maxDistance = 10;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -153,7 +153,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
-            this.maxDistance = 50;
+            this.maxDistance = 10;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -172,7 +172,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
-            this.maxDistance = 50;
+            this.maxDistance = 10;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -191,7 +191,7 @@ game.NPCEntities = {
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
             this.hearts = 1;
-            this.maxDistance = 50;
+            this.maxDistance = 10;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
