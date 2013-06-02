@@ -55,6 +55,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
+    <property name="music" value="zelda_theme"/>
     <property name="to" value="castle_interior"/>
    </properties>
   </object>
