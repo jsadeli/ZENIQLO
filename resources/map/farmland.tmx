@@ -103,6 +103,7 @@
   </object>
   <object name="bug1" x="326" y="268" width="16" height="16">
    <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug1&quot;}]"/>
     <property name="image" value="red_butterfly"/>
     <property name="spriteheight" value="16"/>
     <property name="spritewidth" value="16"/>
@@ -110,6 +111,7 @@
   </object>
   <object name="bug3" x="604" y="188" width="16" height="16">
    <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug3&quot;}]"/>
     <property name="image" value="red_butterfly"/>
     <property name="spriteheight" value="16"/>
     <property name="spritewidth" value="16"/>
@@ -117,6 +119,7 @@
   </object>
   <object name="bug4" x="1098" y="216" width="16" height="16">
    <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug4&quot;}]"/>
     <property name="image" value="red_butterfly"/>
     <property name="spriteheight" value="16"/>
     <property name="spritewidth" value="16"/>
@@ -124,6 +127,7 @@
   </object>
   <object name="bug2" x="166" y="78" width="16" height="16">
    <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug2&quot;}]"/>
     <property name="image" value="red_butterfly"/>
     <property name="spriteheight" value="16"/>
     <property name="spritewidth" value="16"/>
