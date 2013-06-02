@@ -37,6 +37,7 @@
    <properties>
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
+    <property name="music" value="zelda_windmill"/>
     <property name="to" value="castle_exterior"/>
    </properties>
   </object>

@@ -155,6 +155,7 @@
    <properties>
     <property name="dir" value="right"/>
     <property name="fade" value="black"/>
+    <property name="music" value="sm_beware_the_forest_mushrooms"/>
     <property name="to" value="farmland"/>
    </properties>
   </object>

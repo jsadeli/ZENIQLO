@@ -137,6 +137,7 @@
    <properties>
     <property name="dir" value="down"/>
     <property name="fade" value="black"/>
+    <property name="music" value="zelda_lokiri_forest"/>
     <property name="to" value="dungeon"/>
    </properties>
   </object>
@@ -160,6 +161,7 @@
    <properties>
     <property name="dir" value="down"/>
     <property name="fade" value="black"/>
+    <property name="music" value="zelda_lokiri_forest"/>
     <property name="to" value="dungeon"/>
    </properties>
   </object>
