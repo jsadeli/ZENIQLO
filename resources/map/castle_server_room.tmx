@@ -33,7 +33,7 @@
     <property name="to" value="castle_hallway"/>
    </properties>
   </object>
-  <object name="player" x="127" y="410" width="32" height="32">
+  <object name="player" x="127" y="405" width="32" height="32">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;player&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;player_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:18}]"/>
     <property name="image" value="player"/>
@@ -57,9 +57,12 @@
   <object x="7" y="123">
    <polyline points="0,0 22,1 21,-18 123,-18 123,-30 355,-28 357,-5 364,-2 386,2 389,-16 389,-22 415,-22 421,3 442,-3 474,-1"/>
   </object>
-  <object x="189" y="160" width="164" height="33"/>
-  <object x="296" y="255" width="111" height="31"/>
-  <object x="66" y="257" width="188" height="30"/>
-  <object x="97" y="356" width="287" height="25"/>
+  <object x="189" y="153" width="164" height="38"/>
+  <object x="297" y="249" width="109" height="37"/>
+  <object x="66" y="251" width="188" height="35"/>
+  <object x="97" y="348" width="287" height="33"/>
+  <object x="396" y="114">
+   <polyline points="0,0 31,0"/>
+  </object>
  </objectgroup>
 </map>
