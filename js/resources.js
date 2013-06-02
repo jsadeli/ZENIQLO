@@ -27,6 +27,10 @@ game.resources = {
         "player_eyes",
         "abi",
         "abi_eyes",
+        "charles",
+        "charles_eyes",
+        "rachel",
+        "rachel_eyes",
         "george",
         "george_eyes",
         "james",
@@ -45,6 +49,7 @@ game.resources = {
         "chicken",
 //        "red_butterfly",
         "black_butterfly",
+        "jeffrey_grey",
 
         // Collectibles
 //        "coin_gold",

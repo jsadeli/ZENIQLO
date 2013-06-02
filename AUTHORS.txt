@@ -169,6 +169,14 @@ Tiffany Sadeli
  - swan.png
  - sheep_white.png
  - dog_white.png
+ - emily.png
+ - jeffrey.png
+ - jack.png
+ - charles.png
+
+tpasmall
+ - red_butterfly.png
+ - black_butterfly.png
 
 Community Audio (http://archive.org/details/opensource_audio)
  - nyan_cat_original.ogg

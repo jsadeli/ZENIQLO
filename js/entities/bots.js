@@ -15,6 +15,29 @@
 
 game.NPCEntities = {
 
+    "Abi" : game.NPC.extend({
+        "quest_started" : false,
+        "quest_complete" : false,
+
+        "init" : function init(x, y, settings) {
+            this.value = 1000;
+            this.parent(x, y, settings);
+
+            // Adjust collision bounding box.
+            this.adjustBoxShape(0, -10, 25, 20);
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "This castle is sooo HUGE! I love it very much! Don't you think so?"
+            ]);
+        }
+    }),
+
     "Jessica" : game.NPC.extend({
         "quest_started" : false,
         "quest_complete" : false,
@@ -61,6 +84,24 @@ game.NPCEntities = {
 
             game.dialog([
                 "How are you? My name is James, nice to meet you."
+            ]);
+        }
+    }),
+
+    "Charles" : game.NPC.extend({
+        "init": function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact": function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "I'm so handsome.... oh yea~"
             ]);
         }
     }),
@@ -368,6 +409,43 @@ game.NPCEntities = {
 
             game.dialog([
                 "Cluck... cluck!"
+            ]);
+        }
+    }),
+
+    "StorageGuy" : game.NPC.extend({
+        "init": function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact": function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "We hold a lot of raw materials for the royal highness' feast."
+            ]);
+        }
+    }),
+
+    "ServerRoomGuy" : game.NPC.extend({
+        "init": function init(x, y, settings) {
+            this.parent(x, y, settings);
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact": function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+
+            game.dialog([
+                "Be careful! There's a lot of sensitive equipments around here!",
+                "Why are you here?"
             ]);
         }
     }),

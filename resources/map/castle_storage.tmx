@@ -122,5 +122,14 @@
   <object x="62" y="294">
    <polyline points="0,0 11,-7 29,-7 32,5 33,21 26,40 27,53 13,57 -32,58 -31,95 -19,93 -7,95 15,99 13,122 26,128 24,143 19,155 27,159 29,169 29,194"/>
   </object>
+  <object name="storage_guy" x="255" y="127" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;storage_guy&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;james_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:16}]"/>
+    <property name="image" value="james"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

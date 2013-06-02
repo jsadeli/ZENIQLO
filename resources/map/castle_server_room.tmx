@@ -41,6 +41,22 @@
     <property name="spritewidth" value="31"/>
    </properties>
   </object>
+  <object name="server_room_guy" x="74" y="152" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;server_room_guy&quot;}]"/>
+    <property name="image" value="jeffrey_grey"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="server_room_guy" x="420" y="346" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;server_room_guy&quot;}]"/>
+    <property name="image" value="jeffrey_grey"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer name="overlays" width="15" height="15">
   <data encoding="base64">

@@ -107,7 +107,7 @@
   <object name="item" x="384" y="150" width="62" height="8">
    <properties>
     <property name="image" value="accessories"/>
-    <property name="item" value="{&quot;name&quot;:&quot;door2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Unlocked: market entrance.&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;door2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Unlocked: market potential.&quot;}"/>
     <property name="spriteheight" value="5"/>
     <property name="spriteindex" value="15"/>
     <property name="spritewidth" value="64"/>
@@ -120,6 +120,42 @@
     <property name="spriteheight" value="5"/>
     <property name="spriteindex" value="15"/>
     <property name="spritewidth" value="64"/>
+   </properties>
+  </object>
+  <object name="charles" x="1209" y="388" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;charles&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;charles_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:16}]"/>
+    <property name="image" value="charles"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="abi" x="401" y="349" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;abi&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;abi_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:6,&quot;offsety&quot;:16}]"/>
+    <property name="image" value="abi"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="guard" x="1103" y="165" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
+    <property name="image" value="armor_male_green"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="guard" x="1233" y="165" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
+    <property name="image" value="armor_male_green"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
    </properties>
   </object>
  </objectgroup>

@@ -140,6 +140,8 @@ var game = {
         // NPCs.
         me.entityPool.add("jessica", game.NPCEntities.Jessica);
         me.entityPool.add("james", game.NPCEntities.James);
+        me.entityPool.add("abi", game.NPCEntities.Abi);
+        me.entityPool.add("charles", game.NPCEntities.Charles);
         me.entityPool.add("whitey", game.NPCEntities.Whitey);
         me.entityPool.add("guard", game.NPCEntities.Guard);
         me.entityPool.add("dungeon_guard", game.NPCEntities.DungeonGuard);
@@ -154,6 +156,8 @@ var game = {
         me.entityPool.add("snow_girl", game.NPCEntities.SnowGirl);
         me.entityPool.add("swan",game.NPCEntities.Swan);
         me.entityPool.add("chicken",game.NPCEntities.Chicken);
+        me.entityPool.add("storage_guy",game.NPCEntities.StorageGuy);
+        me.entityPool.add("server_room_guy",game.NPCEntities.ServerRoomGuy);
         me.entityPool.add("princess",game.NPCEntities.Princess);
 
         // Interactive objects.

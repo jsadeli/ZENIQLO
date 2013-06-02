@@ -36,6 +36,26 @@
     <property name="to" value="castle_hallway"/>
    </properties>
   </object>
+  <object name="guard" x="221" y="391" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
+    <property name="image" value="armor_male_green"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
+  <object name="guard" x="386" y="392" width="32" height="32">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;guard&quot;}]"/>
+    <property name="image" value="armor_male_green"/>
+    <property name="mass" value="Infinity"/>
+    <property name="npc_standing" value="true"/>
+    <property name="spriteheight" value="34"/>
+    <property name="spritewidth" value="29"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="collision" width="20" height="20">
   <object x="3" y="637">
