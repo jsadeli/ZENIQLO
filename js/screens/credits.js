@@ -59,8 +59,8 @@ game.CreditsScreen = me.ScreenObject.extend({
         this.done = false;
         this.y = 0;
 
-        me.audio.stopTrack();
-        me.audio.playTrack("del_erad");
+//        me.audio.stopTrack();
+//        me.audio.playTrack("del_erad");
 
         me.game.viewport.fadeOut("black", 3000);
     },
