@@ -155,7 +155,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
         // Load the level.
         if (c.DEBUG) {
             this.loadLevel({
-                "to"        : "empty_room",
+                "to"        : "dungeon",
 //                "music"     : "nyan_cat_original",
                 "fadeOut"   : "black",
                 "duration"  : 1000

@@ -89,7 +89,6 @@ game.NPCEntities = {
     "Farmer" : game.NPC.extend({
         "init" : function init(x, y, settings) {
             this.parent(x, y, settings);
-            this.invincible = true;
 
             this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
         },
@@ -99,9 +98,9 @@ game.NPCEntities = {
 
             self.parent(actor);
 
-            var hasNotCollectedBugs = (!game.HUD.HUDItems.inventory.hasItem("bug1") && !game.HUD.HUDItems.inventory.hasItem("bug2") && !game.HUD.HUDItems.inventory.hasItem("bug3") && !game.HUD.HUDItems.inventory.hasItem("bug4"));
-            var hasCollectedSomeBugs = (game.HUD.HUDItems.inventory.hasItem("bug1") || game.HUD.HUDItems.inventory.hasItem("bug2") || game.HUD.HUDItems.inventory.hasItem("bug3") || game.HUD.HUDItems.inventory.hasItem("bug4"));
-            var hasCollectedAllBugs = (game.HUD.HUDItems.inventory.hasItem("bug1") && game.HUD.HUDItems.inventory.hasItem("bug2") && game.HUD.HUDItems.inventory.hasItem("bug3") && game.HUD.HUDItems.inventory.hasItem("bug4"));
+            var hasNotCollectedBugs = ((me.game.getEntityByName("bug1").length >= 1) && (me.game.getEntityByName("bug2").length >= 1) && (me.game.getEntityByName("bug3").length >= 1) && (me.game.getEntityByName("bug4").length >= 1));
+            var hasCollectedSomeBugs = ((me.game.getEntityByName("bug1").length >= 1) || (me.game.getEntityByName("bug2").length >= 1) || (me.game.getEntityByName("bug3").length >= 1) || (me.game.getEntityByName("bug4").length >= 1));
+            var hasCollectedAllBugs = ((me.game.getEntityByName("bug1").length == 0) && (me.game.getEntityByName("bug2").length == 0) && (me.game.getEntityByName("bug3").length == 0) && (me.game.getEntityByName("bug4").length == 0));
 
             if (hasNotCollectedBugs) {
                 game.dialog([
@@ -131,6 +130,78 @@ game.NPCEntities = {
                     "Oh hello there! Would you like to buy some of my products?"
                 ]);
             }
+        }
+    }),
+
+    "Bug1" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+            this.hearts = 1;
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "SWOTed Strength Bug: experience and consistency."
+            ]);
+        }
+    }),
+
+    "Bug2" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+            this.hearts = 1;
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "SWOTed Weakness Bug: no awareness."
+            ]);
+        }
+    }),
+
+    "Bug3" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+            this.hearts = 1;
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "SWOTed Opportunities Bug: expand activities, increase reputation, and leverage other brands."
+            ]);
+        }
+    }),
+
+    "Bug4" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+            this.hearts = 1;
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog([
+                "SWOTed Threat Bug: main competitors (H&M and Zara)."
+            ]);
         }
     }),
 
@@ -186,9 +257,9 @@ game.NPCEntities = {
 
             self.parent(actor);
 
-            var hasNotCollectedKeys = (!game.HUD.HUDItems.inventory.hasItem("key1") && !game.HUD.HUDItems.inventory.hasItem("key2") && !game.HUD.HUDItems.inventory.hasItem("key3"));
-            var hasCollectedSomeKeys = (game.HUD.HUDItems.inventory.hasItem("key1") || game.HUD.HUDItems.inventory.hasItem("key2") || game.HUD.HUDItems.inventory.hasItem("key3"));
-            var hasCollectedAllKeys = (game.HUD.HUDItems.inventory.hasItem("key1") && game.HUD.HUDItems.inventory.hasItem("key2") && game.HUD.HUDItems.inventory.hasItem("key3"));
+            var hasNotCollectedKeys = (!game.HUD.HUDItems.inventory.hasItem("key1") && !game.HUD.HUDItems.inventory.hasItem("key2") && !game.HUD.HUDItems.inventory.hasItem("key3") && !game.HUD.HUDItems.inventory.hasItem("key4"));
+            var hasCollectedSomeKeys = (game.HUD.HUDItems.inventory.hasItem("key1") || game.HUD.HUDItems.inventory.hasItem("key2") || game.HUD.HUDItems.inventory.hasItem("key3") || game.HUD.HUDItems.inventory.hasItem("key4"));
+            var hasCollectedAllKeys = (game.HUD.HUDItems.inventory.hasItem("key1") && game.HUD.HUDItems.inventory.hasItem("key2") && game.HUD.HUDItems.inventory.hasItem("key3") && game.HUD.HUDItems.inventory.hasItem("key4"));
 
             if (hasNotCollectedKeys) {
                 game.dialog([
@@ -196,13 +267,16 @@ game.NPCEntities = {
                 ]);
             } else if (hasCollectedSomeKeys && !hasCollectedAllKeys) {
                 game.dialog([
-                    "I still need a few of the other keys or else I'll get in trouble..."
+                    "I still need a few of the other success keys or else I'll get in trouble..."
                 ]);
             } else if (hasCollectedAllKeys) {
                 game.dialog([
                     "Thanks a lot you! You saved my life!",
-                    "As the reward, I shall help you get out of this place."
+                    "Those success keys will allow you to open new marketing opportunities.",
+                    "As the reward, I shall help you get out of this dungeon.",
+                    "Get ready ..."
                 ], function onCallback() {
+                    game.HUD.HUDItems.inventory.removeWeapon();
                     game.play.loadLevel({
                         "to"        : "castle_exterior",
                         "music"     : "zelda_windmill",
