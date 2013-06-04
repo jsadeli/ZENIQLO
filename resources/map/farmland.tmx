@@ -101,7 +101,7 @@
     <property name="to" value="empty_room"/>
    </properties>
   </object>
-  <object name="bug1" x="326" y="268" width="16" height="16">
+  <object name="bug1" x="341" y="283" width="16" height="16">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug1&quot;}]"/>
     <property name="image" value="black_butterfly"/>
@@ -109,7 +109,7 @@
     <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug3" x="604" y="188" width="16" height="16">
+  <object name="bug3" x="581" y="179" width="16" height="16">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug3&quot;}]"/>
     <property name="image" value="black_butterfly"/>
@@ -117,7 +117,7 @@
     <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug4" x="1098" y="216" width="16" height="16">
+  <object name="bug4" x="673" y="104" width="16" height="16">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug4&quot;}]"/>
     <property name="image" value="black_butterfly"/>
@@ -125,7 +125,7 @@
     <property name="spritewidth" value="16"/>
    </properties>
   </object>
-  <object name="bug2" x="166" y="78" width="16" height="16">
+  <object name="bug2" x="192" y="109" width="16" height="16">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug2&quot;}]"/>
     <property name="image" value="black_butterfly"/>
@@ -165,7 +165,7 @@
     <property name="spritewidth" value="29"/>
    </properties>
   </object>
-  <object name="farmer" x="529" y="450" width="32" height="32">
+  <object name="farmer" x="618" y="449" width="32" height="32">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;farmer&quot;},{&quot;name&quot;:&quot;eyes&quot;,&quot;class&quot;:&quot;game.BlinkingEyes&quot;,&quot;image&quot;:&quot;jessica_eyes&quot;,&quot;spritewidth&quot;:17,&quot;spriteheight&quot;:6,&quot;offsetx&quot;:10,&quot;offsety&quot;:16}]"/>
     <property name="image" value="jessica"/>
@@ -204,6 +204,14 @@
     <property name="dir" value="up"/>
     <property name="fade" value="black"/>
     <property name="to" value="cave_entrance"/>
+   </properties>
+  </object>
+  <object name="bug5" x="1062" y="215" width="16" height="16">
+   <properties>
+    <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:10,&quot;spriteheight&quot;:5},{&quot;name&quot;:&quot;bug5&quot;}]"/>
+    <property name="image" value="black_butterfly"/>
+    <property name="spriteheight" value="16"/>
+    <property name="spritewidth" value="16"/>
    </properties>
   </object>
  </objectgroup>

@@ -140,7 +140,13 @@ game.NPC = game.Sprite.extend({
             cm.remove(self.body);
 
             me.game.sort(game.sort);
+
+            self.onDeath();
         }
+    },
+
+    "onDeath" : function onDeath() {
+        // virtual function
     },
 
     "resetRoam" : function resetRoam() {

@@ -153,6 +153,7 @@ var game = {
         me.entityPool.add("bug2", game.NPCEntities.Bug2);
         me.entityPool.add("bug3", game.NPCEntities.Bug3);
         me.entityPool.add("bug4", game.NPCEntities.Bug4);
+        me.entityPool.add("bug5", game.NPCEntities.Bug5);
         me.entityPool.add("snow_girl", game.NPCEntities.SnowGirl);
         me.entityPool.add("swan",game.NPCEntities.Swan);
         me.entityPool.add("chicken",game.NPCEntities.Chicken);

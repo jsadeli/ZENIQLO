@@ -119,7 +119,7 @@ game.NPCEntities = {
             self.parent(actor);
 
             game.dialog([
-                "Have you talked to the farmer? I think she needs your help."
+                "Have you talked to Uuchka the farmer? I think she needs your help with SWOT."
             ]);
         }
     }),
@@ -142,6 +142,7 @@ game.NPCEntities = {
 
             if (hasNotCollectedBugs) {
                 game.dialog([
+                    "Hi, my name is Uuchka and welcome to my farmland.",
                     "Those damn bugs are eating ma' plants ...",
                     "Can you help me SWOT em' bugs on the fields?"
                 ]);
@@ -184,8 +185,14 @@ game.NPCEntities = {
             var self = this;
 
             self.parent(actor);
+            game.dialog(["Bzzzz... bzzz... bzzzzz....!"]);
+        },
+
+        "onDeath" : function onDeath() {
             game.dialog([
-                "Strength Bug: experience and consistency."
+                "Strength: High quality with reasonable price.",
+                "Strength: Great ability to develop new functional materials.",
+                "Strength: Increasing brand value around the world."
             ]);
         }
     }),
@@ -203,8 +210,14 @@ game.NPCEntities = {
             var self = this;
 
             self.parent(actor);
+            game.dialog(["Bzzzz... bzzz... bzzzzz....!"]);
+        },
+
+        "onDeath" : function onDeath() {
             game.dialog([
-                "Weakness Bug: no awareness."
+                "Weakness: Limited choice for women, no accessories, no bags, no shoes.",
+                "Weakness: Lost the US market.",
+                "Weakness: No awareness of CSR."
             ]);
         }
     }),
@@ -222,8 +235,13 @@ game.NPCEntities = {
             var self = this;
 
             self.parent(actor);
+            game.dialog(["Bzzzz... bzzz... bzzzzz....!"]);
+        },
+
+        "onDeath" : function onDeath() {
             game.dialog([
-                "Opportunities Bug: expand activities, increase reputation, and leverage other brands."
+                "Opportunities: More social marketing opportunities.",
+                "Opportunities: New markets (e.g. South America)."
             ]);
         }
     }),
@@ -241,9 +259,35 @@ game.NPCEntities = {
             var self = this;
 
             self.parent(actor);
+            game.dialog(["Bzzzz... bzzz... bzzzzz....!"]);
+        },
+
+        "onDeath" : function onDeath() {
             game.dialog([
-                "Threat Bug: main competitors (H&M and Zara)."
+                "Threat: H&M is the strongest competitor.",
+                "Threat: H&M strong strategy of sustainability and CSR."
             ]);
+        }
+    }),
+
+    "Bug5" : game.NPC.extend({
+        "init" : function init(x, y, settings) {
+            this.parent(x, y, settings);
+            this.hearts = 1;
+            this.maxDistance = 10;
+
+            this.adjustBoxShape(0, -10, 25, 20);    // adjust collision bounding box
+        },
+
+        "interact" : function interact(actor, callback) {
+            var self = this;
+
+            self.parent(actor);
+            game.dialog(["Bzzzz... bzzz... bzzzzz....!"]);
+        },
+
+        "onDeath" : function onDeath() {
+            game.dialog(["Mini Analysis."]);
         }
     }),
 
