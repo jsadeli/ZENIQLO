@@ -216,7 +216,7 @@ game.story = {
         {
             "image" : null,
             "messages" : [
-                "Ogori Shoji, the original company, only sold men clothes. In 1985,",
+                "Ogori Shoji, the original company, only sold men clothes. In 1984,",
                 "Tadashi-kun decided to expand the business by selling unisex casual wear.",
                 "Thus, a new company under the name UNIQLO (Unique Clothing) was born,",
                 "while the parent company was renamed to Fast Retailing in 1991.",
@@ -296,9 +296,8 @@ game.credits = [
     "",
     "",
     "",
-    "  After waking up and expanding his UNIQLO's marketing strategy",
-    "  from all the lessons he learned in this dream,",
-    "  Tadashi-kun went on to conquer the clothing market in 2021.",
+    "  Upon waking up, Tadashi-kun applied the lessons he learned",
+    "  in his dream and conquered the clothing market in 2021.",
     "",
     "",
     "",
