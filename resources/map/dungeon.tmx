@@ -36,25 +36,25 @@
   <object name="item" x="337" y="147" width="32" height="32">
    <properties>
     <property name="image" value="silver_keys"/>
-    <property name="item" value="{&quot;name&quot;:&quot;key1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'SUBSTANCE' key.&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;key1&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'VISIBILITY' key: increased visibility of CSR.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="0"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
-  <object name="item" x="469" y="713" width="32" height="32">
+  <object name="item" x="210" y="591" width="32" height="32">
    <properties>
     <property name="image" value="silver_keys"/>
-    <property name="item" value="{&quot;name&quot;:&quot;key2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'INTEGRATION' key.&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;key2&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'MEANINGFULNESS' key: a more meaningful and social CSR programs.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="0"/>
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
-  <object name="item" x="848" y="721" width="32" height="32">
+  <object name="item" x="833" y="653" width="32" height="32">
    <properties>
     <property name="image" value="silver_keys"/>
-    <property name="item" value="{&quot;name&quot;:&quot;key4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'VALUE' key.&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;key4&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'VALUE' key: a more impactful value to the production process.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="0"/>
     <property name="spritewidth" value="32"/>
@@ -69,7 +69,7 @@
     <property name="spritewidth" value="32"/>
    </properties>
   </object>
-  <object name="dungeon_guard" x="864" y="133" width="32" height="32">
+  <object name="dungeon_guard" x="785" y="332" width="32" height="32">
    <properties>
     <property name="compose" value="[{&quot;name&quot;:&quot;shadow&quot;,&quot;class&quot;:&quot;game.Shadow&quot;,&quot;image&quot;:&quot;char_shadow&quot;,&quot;spritewidth&quot;:18,&quot;spriteheight&quot;:9},{&quot;name&quot;:&quot;dungeon_guard&quot;}]"/>
     <property name="image" value="armor_male_green"/>
@@ -80,7 +80,7 @@
   <object name="item" x="607" y="153" width="32" height="32">
    <properties>
     <property name="image" value="silver_keys"/>
-    <property name="item" value="{&quot;name&quot;:&quot;key3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'VISIBILITY' key.&quot;}"/>
+    <property name="item" value="{&quot;name&quot;:&quot;key3&quot;,&quot;icon&quot;:0,&quot;description&quot;:&quot;Collected 'INTEGRATION' key: a better organized, united, and integrated CSR program.&quot;}"/>
     <property name="spriteheight" value="32"/>
     <property name="spriteindex" value="0"/>
     <property name="spritewidth" value="32"/>
