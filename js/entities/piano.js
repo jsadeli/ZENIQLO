@@ -50,5 +50,7 @@ game.PianoEntity = game.Sprite.extend({
         this.actor = actor;
         this.callback = callback;
         this.animationpause = false;
+
+        me.event.publish("notify", [ "Playing: " + this.music ]);
     }
 });
