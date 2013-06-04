@@ -130,7 +130,7 @@ game.PlayScreen = game.AnimatedScreen.extend({
                     break;
                 case "farmland":
                     if (!game.stat.load("hint_farmland")) {
-                        me.event.publish("notify", [ "That's Uuchka. We should say hi using the action key!" ]);
+                        me.event.publish("notify", [ "That's Uuchka the Farmer. We should say hi using the action key!" ]);
                         game.stat.save("hint_farmland", true);
                     }
                     break;
