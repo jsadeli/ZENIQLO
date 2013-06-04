@@ -92,7 +92,7 @@
   </object>
   <object name="chest" x="738" y="551" width="32" height="32">
    <properties>
-    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Place] UNIQLO's online store ships to more countries than H&amp;M's.&quot;}}"/>
+    <property name="contents" value="{&quot;type&quot;:&quot;item&quot;, &quot;data&quot;:{&quot;name&quot;:&quot;4Ps&quot;, &quot;description&quot;:&quot;[Place] UNIQLO's lack of competitiveness in the EU and US market.&quot;}}"/>
     <property name="image" value="chests"/>
     <property name="spriteheight" value="32"/>
     <property name="spritewidth" value="32"/>
