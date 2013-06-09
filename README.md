@@ -3,7 +3,7 @@
 ## About
 
 A short game about ZENIQLO.
-Made as an educational exercise in marketing class presentation. Done in ~10 days from idea to completion and zero previous game development experience.
+Made as an educational exercise in marketing class [presentation](https://skydrive.live.com/redir.aspx?resid=C66E7899D0C63CB0!313). Done in ~10 days from idea to completion with zero previous game development experience.
 
 ## License
 
