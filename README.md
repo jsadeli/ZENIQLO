@@ -3,7 +3,7 @@
 ## About
 
 A short game about ZENIQLO.
-Made as an educational exercise in marketing class presentation. Done in ~10 days from idea to completion and zero game development experience.
+Made as an educational exercise in marketing class presentation. Done in ~10 days from idea to completion and zero previous game development experience.
 
 ## License
 
@@ -23,6 +23,10 @@ For more details license information, please see resources.js
 ### Requirements
 
 A browser supporting HTML5 canvas and Ogg audio (tested on Google Chrome).
+
+### Demo
+
+Play the stable build of the game: [version 1.0.1](http://go.sadeli.com/zeniqlo)
 
 ## Tools
 
