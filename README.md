@@ -5,9 +5,11 @@
 A short game about ZENIQLO.
 Made as an educational exercise in marketing class [presentation](https://skydrive.live.com/redir.aspx?resid=C66E7899D0C63CB0!313). Done in ~10 days from idea to completion with zero previous game development experience.
 
+![farmland](https://github.com/jsadeli/ZENIQLO/raw/master/screenshots/farmland.png)
+
 ## License
 
-Special thanks to [melonJS](http://www.melonjs.org/), the [Liberated Pixel Cup](http://lpc.opengameart.org/), and Jay Oster's [Neverwell Moor](http://git.kodewerx.org/neverwell-moor/) project. Without which this project will not be possible under the constraints.
+Special thanks to [melonJS](http://www.melonjs.org/), the [Liberated Pixel Cup](http://lpc.opengameart.org/), and Jay Oster's [Neverwell Moor](http://git.kodewerx.org/neverwell-moor/) project. Without which this project would not be possible under the constraints.
 
 This code is released to the public under a dual license.
 The full license texts are available as follows:
